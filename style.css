@@ -9,9 +9,7 @@
 }
 
 .bodyElement{
-    width: 33%;
-    position:relative;
-    left:33%;
+    width: 100%;
 }
 
 .header{
@@ -27,10 +25,13 @@
 }
 
 .bodyText{
+    width:100%;
     font-family: HelveticaNeue;
     font-size: 1.0em;
     line-height: 1.16;
 }
+
+
 
 .social{
     position: relative;
@@ -38,8 +39,13 @@
     bottom: 27px;
 }
 
-.footer{
-    width:70%;
-    position: relative;
-    left:15%;
+@media only screen and (min-width: 768px){
+    .bodyElement{
+        width: 500px;
+        margin:0 auto;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
 }
