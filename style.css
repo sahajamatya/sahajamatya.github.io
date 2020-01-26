@@ -2,6 +2,7 @@
 @font-face { font-family: Proxima; src: url('Fonts/Proxima/Proxima Nova Alt Light.otf'); }
 @font-face { font-family: Avenir; src: url('Fonts/Avenir/AvenirLTStd-Book.otf'); }
 
+
 .head{
    font-family: Playfair;
    font-size: 3.5em;
@@ -10,8 +11,6 @@
 
 .bodyElement{
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .header{
@@ -34,12 +33,6 @@
 }
 
 
-
-.social{
-    position: relative;
-    left: 50px;
-    bottom: 27px;
-}
 
 @media only screen and (min-width: 768px){
     .bodyElement{
