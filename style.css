@@ -1,7 +1,7 @@
 @font-face { font-family: Playfair; src: url('Fonts/Playfair/PlayfairDisplay-Regular.otf'); }
 @font-face { font-family: Proxima; src: url('Fonts/Proxima/Proxima Nova Alt Light.otf'); }
 @font-face { font-family: Avenir; src: url('Fonts/Avenir/AvenirLTStd-Book.otf'); }
-
+@font-face { font-family: HelveticaNeue; src: url('Fonts/Helvetica/HelveticaNeue-Light.otf'); }
 
 .head{
    font-family: Playfair;
