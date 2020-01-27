@@ -29,6 +29,10 @@ body{
   margin: 0 auto;
 }
 
+.underText{
+  font-size:20;
+}
+
 .head{
    font-family: Playfair;
    font-size: 3.5em;
