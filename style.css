@@ -25,7 +25,7 @@ body{
 }
 
 .mainHeaderClass{
-  width:80%;
+  width:100%;
   margin: 0 auto;
 }
 
@@ -108,7 +108,7 @@ body{
     }
 
     .mainHeaderClass{
-      width:50%;
+      width:83%;
       margin: 0 auto;
     }
 }
