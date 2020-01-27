@@ -4,10 +4,32 @@
 @font-face { font-family: HelveticaNeueLight; src: url('Fonts/Helvetica/HelveticaNeue-Light.otf'); }
 @font-face { font-family: HelveticaNeue; src: url('Fonts/Helvetica/HelveticaNeue.ttc'); }
 
+
+body{
+  margin: 0;
+  padding:0;
+  height:100vh;
+}
+
+#particles-js{
+  height:100%;
+}
+
+.mainHeader{
+  font-family: HelveticaNeueLight;
+  font-size: 6.5em;
+  position:absolute;
+  top:40%;
+}
+
+.mainHeaderClass{
+  width:500px;
+  margin: 0 auto;
+}
+
 .head{
    font-family: Playfair;
    font-size: 3.5em;
-   color:brown;
 }
 
 .bodyElement{
