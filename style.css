@@ -20,11 +20,13 @@ body{
   display:flex;
   flex-wrap:wrap;
   justify-content:space-around;
+  padding-top:20px;
 }
 
 .innerContainer{
-  width:340px;
-  height: 215px;
+  width:85%;
+  height: 235px;
+  margin:0 auto;
   border:1px #ccc solid;
   padding:15px;
   border-radius: 10px;
@@ -32,14 +34,14 @@ body{
   font-family: Playfair;
   color:black;
   font-size:1.2em;
+
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 7.5px 10px rgba(0, 0, 0, 0.06),
   0 15.3px 10.9px rgba(0, 0, 0, 0.072),
   0 20.8px 10.4px rgba(0, 0, 0, 0.086),
-  0 1px 100px rgba(0, 0, 0, 0.12)
-;
+  0 1px 100px rgba(0, 0, 0, 0.12);
 }
 
 .innerContainer:active {
@@ -51,6 +53,10 @@ body{
   max-height:100%;
   padding-top:10px;
   border-radius: 10px;
+}
+
+.containerBody{
+  padding-top:20px;
 }
 
 .mainHeader{
