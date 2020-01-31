@@ -4,6 +4,7 @@
 @font-face { font-family: HelveticaNeueLight; src: url('Fonts/Helvetica/HelveticaNeue-Light.otf'); }
 @font-face { font-family: HelveticaNeue; src: url('Fonts/Helvetica/HelveticaNeue.ttc'); }
 @font-face { font-family: HelveticaNeueUltraLight; src: url('Fonts/Helvetica/HelveticaNeue-UltraLight.otf'); }
+@font-face { font-family: SFProLight; src: url('Fonts/SFPro/SF-Pro-Text-Light.otf'); }
 
 
 body{
@@ -27,21 +28,20 @@ body{
   width:85%;
   height: 235px;
   margin:0 auto;
-  border:1px #ccc solid;
   padding:15px;
   border-radius: 10px;
   margin-bottom: 20px;
-  font-family: Playfair;
+  font-family: HelveticaNeueLight;
   color:black;
   font-size:1.2em;
 
   box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 7.5px 10px rgba(0, 0, 0, 0.06),
-  0 15.3px 10.9px rgba(0, 0, 0, 0.072),
-  0 20.8px 10.4px rgba(0, 0, 0, 0.086),
-  0 1px 100px rgba(0, 0, 0, 0.12);
+  0 1px 5px rgba(0, 0, 0, 0.034),
+  0 1px 5px rgba(0, 0, 0, 0.048),
+  0 1px 5px rgba(0, 0, 0, 0.06),
+  0 1px 5px rgba(0, 0, 0, 0.072),
+  0 1px 5px rgba(0, 0, 0, 0.086),
+  0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
 .innerContainer:active {
@@ -75,7 +75,7 @@ body{
 }
 
 .head{
-   font-family: Playfair;
+   font-family: HelveticaNeueLight;
    width: 90%;
    margin: 0 auto;
    font-size: 1.2em;
