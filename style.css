@@ -67,7 +67,7 @@ body{
 .textDesc{
   font-family: HelveticaNeueLight;
   width: calc(95% - 113px);
-  height:calc(100% + 10px);
+  height:100%;
   float:left;
   overflow: hidden;
 }
