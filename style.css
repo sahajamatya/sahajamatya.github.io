@@ -5,7 +5,7 @@
 @font-face { font-family: HelveticaNeue; src: url('Fonts/Helvetica/HelveticaNeue.ttc'); }
 @font-face { font-family: HelveticaNeueUltraLight; src: url('Fonts/Helvetica/HelveticaNeue-UltraLight.otf'); }
 @font-face { font-family: SFProLight; src: url('Fonts/SFPro/SF-Pro-Text-Light.otf'); }
-
+@font-face { font-family: ProductSansRegular; src: url('Fonts/ProductSans/ProductSansRegular.ttf'); }
 
 body{
   margin: 0;
@@ -26,12 +26,12 @@ body{
 
 .innerContainer{
   width:85%;
-  height: 235px;
+  height: 150px;
   margin:0 auto;
   padding:15px;
   border-radius: 3px;
   margin-bottom: 20px;
-  font-family: HelveticaNeueLight;
+  font-family: ProductSansRegular;
   color:black;
   font-size:1.2em;
 
@@ -51,12 +51,32 @@ body{
 .innerContainer img{
   max-width:100%;
   max-height:100%;
-  padding-top:10px;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .containerBody{
   padding-top:20px;
+}
+
+.description{
+  width: 100%;
+  height: 113px;
+  font-size:0.79em;
+}
+
+.textDesc{
+  font-family: HelveticaNeueLight;
+  width: calc(95% - 113px);
+  height:calc(100% + 13px);
+  float:left;
+  overflow: hidden;
+}
+
+.imgBox{
+  width: 113px;
+  height: 113px;
+  float: right;
+  padding-top:13px;
 }
 
 .mainHeader{
@@ -75,7 +95,7 @@ body{
 }
 
 .head{
-   font-family: HelveticaNeueLight;
+   font-family: Product Sans;
    width: 90%;
    margin: 0 auto;
    font-size: 1.2em;
