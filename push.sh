@@ -1,3 +1,3 @@
 git add .
-git commit -m “commit via batch file”
+git commit -m “commit_via_batch_file”
 git push origin master

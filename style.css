@@ -8,6 +8,10 @@
 @font-face { font-family: ProductSansRegular; src: url('Fonts/ProductSans/ProductSansRegular.ttf'); }
 @font-face { font-family: ProductSansLight; src: url('Fonts/ProductSans/ProductSansLight.ttf'); }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   padding:0;
@@ -134,6 +138,15 @@ body{
     margin: 0 auto;
 }
 
+.arrow{
+  background-size: cover;
+    border-radius:50% 50% 50% 50%;
+    width:25px;
+    height:25px;
+    opacity: 0.5;
+    scroll-behavior: smooth;
+}
+
 .header{
     font-family: ProductSansRegular;
     font-size:2.5em;
@@ -177,6 +190,21 @@ body{
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    .arrow{
+      background-size: cover;
+        border-radius:50% 50% 50% 50%;
+        width:25px;
+        height:25px;
+        opacity: 0.5;
+        box-shadow:
+        0 1px 5px rgba(1, 0, 0, 0.134),
+        0 1px 5px rgba(1, 0, 0, 0.148),
+        0 1px 5px rgba(1, 0, 0, 0.16),
+        0 1px 5px rgba(1, 0, 0, 0.172),
+        0 1px 5px rgba(1, 0, 0, 0.186),
+        0 1px 5px rgba(1, 0, 0, 0.12);
+    }
 }
 
 
@@ -204,6 +232,21 @@ body{
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    .arrow{
+      background-size: cover;
+        border-radius:50% 50% 50% 50%;
+        width:25px;
+        height:25px;
+        opacity: 0.5;
+        box-shadow:
+        0 1px 5px rgba(1, 0, 0, 0.134),
+        0 1px 5px rgba(1, 0, 0, 0.148),
+        0 1px 5px rgba(1, 0, 0, 0.16),
+        0 1px 5px rgba(1, 0, 0, 0.172),
+        0 1px 5px rgba(1, 0, 0, 0.186),
+        0 1px 5px rgba(1, 0, 0, 0.12);
+    }
 }
 
 /*Laptops/Monitors*/
@@ -229,6 +272,21 @@ body{
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    .arrow img{
+      background-size: cover;
+        border-radius:50% 50% 50% 50%;
+        width:25px;
+        height:25px;
+        opacity: 0.5;
+        box-shadow:
+        0 1px 5px rgba(1, 0, 0, 0.134),
+        0 1px 5px rgba(1, 0, 0, 0.148),
+        0 1px 5px rgba(1, 0, 0, 0.16),
+        0 1px 5px rgba(1, 0, 0, 0.172),
+        0 1px 5px rgba(1, 0, 0, 0.186),
+        0 1px 5px rgba(1, 0, 0, 0.12);
     }
 
 }
