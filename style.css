@@ -6,6 +6,7 @@
 @font-face { font-family: HelveticaNeueUltraLight; src: url('Fonts/Helvetica/HelveticaNeue-UltraLight.otf'); }
 @font-face { font-family: SFProLight; src: url('Fonts/SFPro/SF-Pro-Text-Light.otf'); }
 @font-face { font-family: ProductSansRegular; src: url('Fonts/ProductSans/ProductSansRegular.ttf'); }
+@font-face { font-family: ProductSansLight; src: url('Fonts/ProductSans/ProductSansLight.ttf'); }
 
 body{
   margin: 0;
@@ -26,7 +27,7 @@ body{
 
 .innerContainer{
   width:85%;
-  height: 150px;
+  height: 158px;
   margin:0 auto;
   padding:15px;
   border-radius: 3px;
@@ -44,8 +45,8 @@ body{
   0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
-.innerContainer:active {
-  transform: translateY(5px);
+.innerContainer:hover {
+  transform: translateY(2px);
 }
 
 .innerContainer img{
@@ -60,23 +61,45 @@ body{
 
 .description{
   width: 100%;
-  height: 113px;
-  font-size:0.79em;
+  height: 126px;
+  font-size:0.75em;
 }
 
 .textDesc{
   font-family: HelveticaNeueLight;
   width: calc(95% - 113px);
-  height:calc(100% - 5px);
+  height:100%;
   float:left;
   overflow: hidden;
 }
 
+.descText{
+  display: block;
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .imgBox{
-  width: 113px;
-  height: 113px;
+  width: 100.5px;
+  height: 100.5px;
   float: right;
   padding-top:13px;
+}
+
+.dateBox{
+  width:100%;
+  height:20px;
+}
+
+.date{
+  font-family: ProductSansLight;
+  font-size: 0.55em;
+  color:grey;
+  margin-top: 0px;
 }
 
 .mainHeader{
