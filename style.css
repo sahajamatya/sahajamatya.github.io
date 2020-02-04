@@ -92,11 +92,12 @@ body {
     0 1px 5px rgba(0, 0, 0, 0.072),
     0 1px 5px rgba(0, 0, 0, 0.086),
     0 1px 5px rgba(0, 0, 0, 0.12);
-
-    -webkit-transition: 0.1s ease-in-out;
-      -moz-transition: 0.1s ease-in-out;
-      -o-transition: 0.1s ease-in-out;
-      transition: 0.1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  /* position: relative;
+  animation: animateright 1s; */
 }
 
 .innerContainer:hover {
@@ -265,21 +266,16 @@ body {
   transition: 1s ease-in-out;
 }
 
-/* .lineSeg {
-  height: .25rem;
-  width: 150px;
-  margin: 0;
-  background: black;
-  border: none;
-  transition: .3s ease-in-out;
-}
+/* @keyframes animateright {
+  from {
+    right: -100px;
+    opacity: 0
+  }
 
-.pubPosts:hover ~ .lineSeg {
-  margin-right: 5%;
-}
-
-.upPosts:hover ~ .lineSeg {
-  margin-right: 25%;
+  to {
+    right: 0;
+    opacity: 1
+  }
 } */
 /*iPad*/
 @media only screen and (min-width: 768px) {
@@ -501,3 +497,15 @@ body {
     display: block;
   }
 }
+
+/*Div swipe animation
+
+Slide from the right animation
+.w3-animate-right{
+position:relative;
+animation:animateright 0.4s;
+}
+@keyframes animateright{
+from{right:-300px;opacity:0}
+to{right:0;opacity:1}
+}*/
