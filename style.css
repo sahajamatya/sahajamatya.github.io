@@ -260,15 +260,10 @@ body {
   font-family: HelveticaNeueLight;
   position: absolute;
   left: 50%;
-  margin-left: -40px;
+  margin-left: -35px;
   margin-top: 10px;
   transition: 1s ease-in-out;
 }
-
-.hint:hover .scrollDown {
-  display: block;
-}
-
 
 /* .lineSeg {
   height: .25rem;
@@ -499,6 +494,10 @@ body {
   }
 
   #pubPost1, #pubPost2, #pubPost3, #pubPost4, #pubPost5, #pubPost6 {
+    display: block;
+  }
+
+  .hint:hover .scrollDown {
     display: block;
   }
 }
