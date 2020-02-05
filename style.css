@@ -266,6 +266,7 @@ body {
   transition: 1s ease-in-out;
 }
 
+
 /* @keyframes animateright {
   from {
     right: -100px;
@@ -277,6 +278,13 @@ body {
     opacity: 1
   }
 } */
+
+.footerContainer{
+  height:33vh;
+  margin-top:100px;
+  background-color: #000000;
+}
+
 /*iPad*/
 @media only screen and (min-width: 768px) {
   .bodyElement {
