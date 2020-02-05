@@ -61,7 +61,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .containerBody {
@@ -281,8 +281,9 @@ body {
 
 .footerContainer{
   height:33vh;
-  margin-top:100px;
-  background-color: #000000;
+  margin-top:150px;
+  background-color: #222222;
+  box-shadow: 0px -1px 35px black;
 }
 
 /*iPad*/
