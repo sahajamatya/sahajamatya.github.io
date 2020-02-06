@@ -278,9 +278,13 @@ body {
   }
 } */
 .footerContainer {
-  height: 33vh;
+  height: 36vh;
   margin-top: 60px;
-  background-color: #222222;
+  background: linear-gradient(rgba(20, 20, 20, .5),
+      rgba(20, 20, 20, .2)),
+    url("img/headshot.png");
+  background-size: cover;
+  background-position: center center;
 }
 
 .upperLip {
@@ -295,7 +299,7 @@ body {
 
 .footerContent {
   color: white;
-  font-family: HelveticaNeueLight;
+  font-family: HelveticaNeue;
   width: 92%;
   margin: 0 auto;
 }
@@ -303,23 +307,31 @@ body {
 .footerHeading {
   font-family: ProductSansRegular;
   font-size: 1.5em;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .footerCopyright {
   font-family: HelveticaNeue;
+  position: absolute;
+  bottom: 0px;
 }
 
 .dropIdea {
   color: black;
   background: white;
   border-radius: 6px;
-  width: 115px;
-  padding: 10px;
+  width: 88px;
+  padding: 8px;
 }
 
 .dropIdea:hover {
   transform: translateY(-0.5px);
+}
+
+.firstFooterComp {
+  font-size: 0.75em;
+  position: relative;
+  height: 19vh;
 }
 
 /*iPad*/
@@ -391,6 +403,12 @@ body {
   #pubPost5, #pubPost6 {
     display: none;
   }
+
+  .firstFooterComp {
+    font-size: 0.75em;
+    position: relative;
+    height: 23vh;
+  }
 }
 
 /*iPad Pro*/
@@ -454,6 +472,12 @@ body {
       0 1px 5px rgba(0, 0, 0, 0.072),
       0 1px 5px rgba(0, 0, 0, 0.086),
       0 1px 5px rgba(0, 0, 0, 0.12);
+  }
+
+  .firstFooterComp {
+    font-size: 0.75em;
+    position: relative;
+    height: 25vh;
   }
 }
 
@@ -547,6 +571,12 @@ body {
     font-family: HelveticaNeueLight;
     width: 70%;
     margin: 0 auto;
+  }
+
+  .firstFooterComp {
+    font-size: 0.75em;
+    position: relative;
+    height: 22vh;
   }
 }
 
