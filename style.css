@@ -281,19 +281,45 @@ body {
   height: 33vh;
   margin-top: 60px;
   background-color: #222222;
-  /* box-shadow: inset 0px 150px 150px -150px black; */
 }
 
 .upperLip {
-  height: `100px;
+  height: 8px;
   width: 100%;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   background-color: white;
-  -webkit-box-shadow: 0 3px 1px -1px black;
-  -moz-box-shadow: 0 3px 1px -1px black;
-  box-shadow: 0 3px 1px -1px black;
+  box-shadow: 0px 10px 10px;
   /*box-shadow: 0px -1px 35px black;*/
+}
+
+.footerContent {
+  color: white;
+  font-family: HelveticaNeueLight;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.footerHeading {
+  font-family: ProductSansRegular;
+  font-size: 1.5em;
+  padding-top: 30px;
+}
+
+.footerCopyright {
+  font-family: HelveticaNeue;
+}
+
+.dropIdea {
+  color: black;
+  background: white;
+  border-radius: 6px;
+  width: 115px;
+  padding: 10px;
+}
+
+.dropIdea:hover {
+  transform: translateY(-0.5px);
 }
 
 /*iPad*/
@@ -514,6 +540,13 @@ body {
 
   .hint:hover .scrollDown {
     display: block;
+  }
+
+  .footerContent {
+    color: white;
+    font-family: HelveticaNeueLight;
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
