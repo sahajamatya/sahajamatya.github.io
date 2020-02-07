@@ -69,8 +69,8 @@ body {
 
 .containerHeader {
   /*-moz-box-shadow: inset 0 -10px 9px -10px #000000;
-  -webkit-box-shadow: inset 0 -10px 9px -10px #000000;*/
-  box-shadow: inset 0 -10px 9px -10px #000000;
+  -webkit-box-shadow: inset 0 -10px 9px -10px #000000;
+  box-shadow: inset 0 -10px 9px -10px #000000;*/
   height: 30px;
   width: 92%;
 }
