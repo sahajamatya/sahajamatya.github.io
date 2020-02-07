@@ -81,7 +81,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   box-sizing: border-box;
-  align-content: center;
+  align-items: center;
 }
 
 .innerContainer {
