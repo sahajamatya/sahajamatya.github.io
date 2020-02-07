@@ -190,7 +190,6 @@ body {
   text-align: center;
 }
 
-
 .underText {
   font-size: 20;
 }
@@ -289,11 +288,13 @@ body {
 .footerContainer {
   height: 40vh;
   margin-top: 60px;
-  background: linear-gradient(rgba(20, 20, 20, .5),
-      rgba(20, 20, 20, .2)),
-    url("img/headshot.png");
-  background-size: cover;
+  background: linear-gradient(rgba(20, 20, 20, .6),
+      rgba(20, 20, 20, .3)),
+    url("img/headshot3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center center;
+  background-size: cover;
 }
 
 .upperLip {
