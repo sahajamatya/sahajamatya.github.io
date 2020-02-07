@@ -290,9 +290,8 @@ body {
   margin-top: 60px;
   background: linear-gradient(rgba(20, 20, 20, .6),
       rgba(20, 20, 20, .3)),
-    url("img/headshot3.png");
+    url("img/headshot.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
@@ -587,6 +586,18 @@ body {
     font-size: 0.75em;
     position: relative;
     height: 22vh;
+  }
+
+  .footerContainer {
+    height: 40vh;
+    margin-top: 60px;
+    background: linear-gradient(rgba(20, 20, 20, .6),
+        rgba(20, 20, 20, .3)),
+      url("img/headshot3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
