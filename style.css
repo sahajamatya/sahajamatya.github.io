@@ -68,10 +68,9 @@ body {
 }
 
 .containerHeader {
-  /* -webkit-box-shadow: 0px 5px 6px -5px;
-  -moz-box-shadow: 0px 5px 6px -5px;
-  box-shadow: 0px 5px 6px -5px;
-  border-radius: 3px; */
+  /*-moz-box-shadow: inset 0 -6px 10px -10px #000000;
+  -webkit-box-shadow: inset 0 -6px 10px -10px #000000;
+  box-shadow: inset 0 -6px 10px -10px #000000;*/
   height: 30px;
   width: 92%;
 }
@@ -208,7 +207,7 @@ body {
 
 .head {
   font-family: ProductSansRegular;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   font-size: 1.2em;
   text-align: center;
@@ -254,6 +253,13 @@ body {
 
 #pubPost4, #pubPost5 {
   display: none;
+}
+
+.pubPosts {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 200px;
 }
 
 .upPosts {
@@ -337,6 +343,7 @@ body {
   border-radius: 6px;
   width: 88px;
   padding: 8px;
+  cursor: point;
 }
 
 .dropIdea:hover {
@@ -424,6 +431,10 @@ body {
     position: relative;
     height: 23vh;
   }
+
+  .containerHeader {
+    width: 87%;
+  }
 }
 
 /*iPad Pro*/
@@ -493,6 +504,10 @@ body {
     font-size: 0.75em;
     position: relative;
     height: 25vh;
+  }
+
+  .containerHeader {
+    width: 90%;
   }
 }
 
@@ -604,6 +619,10 @@ body {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+  }
+
+  .containerHeader {
+    width: 72.5%;
   }
 }
 
