@@ -71,7 +71,7 @@ body {
   -moz-box-shadow: inset 0 -6px 10px -10px #000000;
   -webkit-box-shadow: inset 0 -6px 10px -10px #000000;
   box-shadow: inset 0 -6px 10px -10px #000000;
-  height: 50px;
+  height: 40px;
   width: 100%;
 }
 
@@ -85,35 +85,35 @@ body {
   transition: all 250ms ease;
   position: relative;
   top: 15px;
-  width: 290px;
+  width: 185px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.head span:before,
-.head span:after {
+.head span i:before,
+.head span i:after {
   display: inline;
   content: " ";
   height: 30px;
   width: 70px;
   background-color: #FFF;
   transition: all 250ms ease;
-  position: relative;
-  top: 5px;
+  position: absolute;
+  top: -5px;
 }
 
-.head span:after {
-  position: relative;
-  right: 61px;
+.head span i:before {
   display: inline-block;
+  right: 18px;
   transform: skew(30deg, 0deg);
   box-shadow: 2px -2px 2px #D3D3D3;
   z-index: -1;
   border-radius: 0 5px 0 0;
 }
 
-.head span:before {
-  position: relative;
-  left: 61px;
+.head span i:after {
   display: inline-block;
+  left: 18px;
   z-index: -1;
   transform: skew(-30deg, 0deg);
   box-shadow: -2px -2px 2px #D3D3D3;
@@ -123,6 +123,7 @@ body {
 span i {
   background-color: white;
   font-style: normal;
+  padding-bottom: 5px;
 }
 
 .containerBody {
