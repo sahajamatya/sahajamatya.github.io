@@ -75,6 +75,7 @@ body {
   width: 100%;
 }
 
+/*Fix positioning by messing with inner span i tag*/
 .head span {
   display: inline-block;
   float: left;
@@ -82,9 +83,9 @@ body {
   position: relative;
   cursor: pointer;
   transition: all 250ms ease;
-  position:relative;
-  top:15px;
-  width:290px;
+  position: relative;
+  top: 15px;
+  width: 290px;
 }
 
 .head span:before,
@@ -95,25 +96,33 @@ body {
   width: 70px;
   background-color: #FFF;
   transition: all 250ms ease;
-  position:relative;
-  top:5px;
+  position: relative;
+  top: 5px;
 }
 
 .head span:after {
   position: relative;
-  right:61px;
+  right: 61px;
   display: inline-block;
   transform: skew(30deg, 0deg);
-  box-shadow: 2px -2px 2px #999;
-  z-index:-1;
+  box-shadow: 2px -2px 2px #D3D3D3;
+  z-index: -1;
+  border-radius: 0 5px 0 0;
 }
+
 .head span:before {
   position: relative;
-  left:61px;
+  left: 61px;
   display: inline-block;
-  z-index:-1;
+  z-index: -1;
   transform: skew(-30deg, 0deg);
-  box-shadow: -2px -2px 2px #999;
+  box-shadow: -2px -2px 2px #D3D3D3;
+  border-radius: 5px 0 0 0;
+}
+
+span i {
+  background-color: white;
+  font-style: normal;
 }
 
 .containerBody {
@@ -379,7 +388,7 @@ body {
   color: black;
   background: white;
   border-radius: 6px;
-  width: 89px;
+  width: 91px;
   padding: 8px;
   cursor: pointer;
 }
