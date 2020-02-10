@@ -68,11 +68,52 @@ body {
 }
 
 .containerHeader {
-  /*-moz-box-shadow: inset 0 -6px 10px -10px #000000;
+  -moz-box-shadow: inset 0 -6px 10px -10px #000000;
   -webkit-box-shadow: inset 0 -6px 10px -10px #000000;
-  box-shadow: inset 0 -6px 10px -10px #000000;*/
+  box-shadow: inset 0 -6px 10px -10px #000000;
+  height: 50px;
+  width: 100%;
+}
+
+.head span {
+  display: inline-block;
+  float: left;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+  transition: all 250ms ease;
+  position:relative;
+  top:15px;
+  width:290px;
+}
+
+.head span:before,
+.head span:after {
+  display: inline;
+  content: " ";
   height: 30px;
-  width: 92%;
+  width: 70px;
+  background-color: #FFF;
+  transition: all 250ms ease;
+  position:relative;
+  top:5px;
+}
+
+.head span:after {
+  position: relative;
+  right:61px;
+  display: inline-block;
+  transform: skew(30deg, 0deg);
+  box-shadow: 2px -2px 2px #999;
+  z-index:-1;
+}
+.head span:before {
+  position: relative;
+  left:61px;
+  display: inline-block;
+  z-index:-1;
+  transform: skew(-30deg, 0deg);
+  box-shadow: -2px -2px 2px #999;
 }
 
 .containerBody {
@@ -256,14 +297,11 @@ body {
 }
 
 .pubPosts {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 200px;
+  width: 160px;
 }
 
 .upPosts {
-  opacity: 0.5;
+  width: 160px;
 }
 
 .scrollDown {
@@ -341,9 +379,9 @@ body {
   color: black;
   background: white;
   border-radius: 6px;
-  width: 88px;
+  width: 89px;
   padding: 8px;
-  cursor: point;
+  cursor: pointer;
 }
 
 .dropIdea:hover {
