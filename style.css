@@ -351,6 +351,7 @@ span i {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border:1px dashed red;
 }
 
 .upperLip {
@@ -366,20 +367,35 @@ span i {
 .footerContent {
   color: white;
   font-family: HelveticaNeue;
-  width: 92%;
-  margin: 0 auto;
+  width: 40%;
+  margin-left:4%;
+  height:100%;
+  border:1px dashed green;
+  display:flex;
+  flex-direction: row;
+}
+
+.firstFooterComp {
+  font-size: 0.75em;
+  position: relative;
+  height: 20vh;
+}
+
+.secondFooterComp{
+  float:left;
+  border:1px dashed yellow;
 }
 
 .footerHeading {
   font-family: ProductSansRegular;
   font-size: 1.5em;
   padding-top: 20px;
+  border:1px dashed white;
 }
 
 .footerCopyright {
   font-family: HelveticaNeue;
-  position: absolute;
-  bottom: 0px;
+  border:1px dashed blue;
 }
 
 .dropIdea {
@@ -395,12 +411,7 @@ span i {
   transform: translateY(-0.5px);
 }
 
-.firstFooterComp {
-  font-size: 0.75em;
-  position: relative;
-  height: 20vh;
-  width: 40%
-}
+
 
 /*iPad*/
 @media only screen and (min-width: 768px) {
@@ -671,15 +682,3 @@ span i {
     width: 72.5%;
   }
 }
-
-/*Div swipe animation
-
-Slide from the right animation
-.w3-animate-right{
-position:relative;
-animation:animateright 0.4s;
-}
-@keyframes animateright{
-from{right:-300px;opacity:0}
-to{right:0;opacity:1}
-}*/
