@@ -331,17 +331,6 @@ span i {
   transition: 1s ease-in-out;
 }
 
-/* @keyframes animateright {
-  from {
-    right: -100px;
-    opacity: 0
-  }
-
-  to {
-    right: 0;
-    opacity: 1
-  }
-} */
 .footerContainer {
   height: 40vh;
   margin-top: 60px;
@@ -367,7 +356,26 @@ span i {
   color: white;
   font-family: HelveticaNeue;
   width: 92%;
-  margin: 0 auto;
+  margin-left: 4%;
+  height: 95%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.firstFooterComp {
+  font-size: 0.75em;
+  position: relative;
+  height: 100%;
+  width: 47%;
+}
+
+.secondFooterComp {
+  font-size: 0.75em;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 47%;
 }
 
 .footerHeading {
@@ -379,7 +387,7 @@ span i {
 .footerCopyright {
   font-family: HelveticaNeue;
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
 }
 
 .dropIdea {
@@ -393,13 +401,6 @@ span i {
 
 .dropIdea:hover {
   transform: translateY(-0.5px);
-}
-
-.firstFooterComp {
-  font-size: 0.75em;
-  position: relative;
-  height: 20vh;
-  width: 40%
 }
 
 /*iPad*/
@@ -472,14 +473,12 @@ span i {
     display: none;
   }
 
-  .firstFooterComp {
-    font-size: 0.75em;
-    position: relative;
-    height: 23vh;
-  }
-
   .containerHeader {
     width: 87%;
+  }
+
+  .footerContainer {
+    height: 25vh;
   }
 }
 
@@ -546,14 +545,12 @@ span i {
       0 1px 5px rgba(0, 0, 0, 0.12);
   }
 
-  .firstFooterComp {
-    font-size: 0.75em;
-    position: relative;
-    height: 25vh;
-  }
-
   .containerHeader {
     width: 90%;
+  }
+
+  .footerContainer {
+    height: 20vh;
   }
 }
 
@@ -649,12 +646,6 @@ span i {
     margin: 0 auto;
   }
 
-  .firstFooterComp {
-    font-size: 0.75em;
-    position: relative;
-    height: 22vh;
-  }
-
   .footerContainer {
     height: 40vh;
     margin-top: 60px;
@@ -670,16 +661,8 @@ span i {
   .containerHeader {
     width: 72.5%;
   }
-}
 
-/*Div swipe animation
-
-Slide from the right animation
-.w3-animate-right{
-position:relative;
-animation:animateright 0.4s;
+  .footerContainer {
+    height: 25vh;
+  }
 }
-@keyframes animateright{
-from{right:-300px;opacity:0}
-to{right:0;opacity:1}
-}*/
