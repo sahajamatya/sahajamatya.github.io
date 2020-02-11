@@ -70,7 +70,7 @@ body {
 .containerHeader {
   -moz-box-shadow: inset 0 -6px 10px -10px #000000;
   -webkit-box-shadow: inset 0 -6px 10px -10px #000000;
-  box-shadow: inset 0 -6px 10px -10px #000000;
+  box-shadow: inset 0 -6px 8px -10px #000000;
   height: 40px;
   width: 100%;
 }
@@ -85,7 +85,7 @@ body {
   transition: all 250ms ease;
   position: relative;
   top: 15px;
-  width: 185px;
+  width: 155px;
   margin: 0px;
   padding: 0px;
 }
@@ -104,7 +104,7 @@ body {
 
 .head span i:before {
   display: inline-block;
-  right: 18px;
+  right: -7px;
   transform: skew(30deg, 0deg);
   box-shadow: 2px -2px 2px #D3D3D3;
   z-index: -1;
@@ -113,7 +113,7 @@ body {
 
 .head span i:after {
   display: inline-block;
-  left: 18px;
+  left: 9px;
   z-index: -1;
   transform: skew(-30deg, 0deg);
   box-shadow: -2px -2px 2px #D3D3D3;
@@ -123,7 +123,9 @@ body {
 span i {
   background-color: white;
   font-style: normal;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
+  margin-left: 19px;
+  overflow: hidden;
 }
 
 .containerBody {
@@ -260,7 +262,6 @@ span i {
   font-family: ProductSansRegular;
   width: 100%;
   margin: 0 auto;
-  font-size: 1.2em;
   text-align: center;
 }
 
@@ -306,12 +307,8 @@ span i {
   display: none;
 }
 
-.pubPosts {
-  width: 160px;
-}
-
-.upPosts {
-  width: 160px;
+.pubPosts i {
+  opacity: 0.5;
 }
 
 .scrollDown {
