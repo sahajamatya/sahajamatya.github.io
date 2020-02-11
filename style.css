@@ -340,6 +340,7 @@ span i {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border:1px dashed red;
 }
 
 .upperLip {
@@ -355,17 +356,27 @@ span i {
 .footerContent {
   color: white;
   font-family: HelveticaNeue;
+<<<<<<< HEAD
   width: 92%;
   margin-left: 4%;
   height: 95%;
   display: flex;
   flex-direction: row;
   position: relative;
+=======
+  width: 40%;
+  margin-left:4%;
+  height:100%;
+  border:1px dashed green;
+  display:flex;
+  flex-direction: row;
+>>>>>>> 72ca3bb9a25a8e40da77ff516572339ac8b8007d
 }
 
 .firstFooterComp {
   font-size: 0.75em;
   position: relative;
+<<<<<<< HEAD
   height: 100%;
   width: 47%;
 }
@@ -376,18 +387,31 @@ span i {
   right: 0px;
   height: 100%;
   width: 47%;
+=======
+  height: 20vh;
+}
+
+.secondFooterComp{
+  float:left;
+  border:1px dashed yellow;
+>>>>>>> 72ca3bb9a25a8e40da77ff516572339ac8b8007d
 }
 
 .footerHeading {
   font-family: ProductSansRegular;
   font-size: 1.5em;
   padding-top: 20px;
+  border:1px dashed white;
 }
 
 .footerCopyright {
   font-family: HelveticaNeue;
+<<<<<<< HEAD
   position: absolute;
   bottom: 10px;
+=======
+  border:1px dashed blue;
+>>>>>>> 72ca3bb9a25a8e40da77ff516572339ac8b8007d
 }
 
 .dropIdea {
@@ -403,6 +427,11 @@ span i {
   transform: translateY(-0.5px);
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 72ca3bb9a25a8e40da77ff516572339ac8b8007d
 /*iPad*/
 @media only screen and (min-width: 768px) {
   .bodyElement {
@@ -661,8 +690,12 @@ span i {
   .containerHeader {
     width: 72.5%;
   }
+<<<<<<< HEAD
 
   .footerContainer {
     height: 25vh;
   }
 }
+=======
+}
+>>>>>>> 72ca3bb9a25a8e40da77ff516572339ac8b8007d
