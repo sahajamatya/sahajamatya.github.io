@@ -340,7 +340,6 @@ span i {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  border: 1px dashed red;
 }
 
 .upperLip {
@@ -383,7 +382,6 @@ span i {
   font-family: ProductSansRegular;
   font-size: 1.5em;
   padding-top: 20px;
-  border: 1px dashed white;
 }
 
 .footerCopyright {
