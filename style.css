@@ -390,6 +390,11 @@ span i {
   bottom: 10px;
 }
 
+.footerSocial {
+  width: 25px;
+  padding-right: 9px;
+}
+
 .dropIdea {
   color: black;
   background: white;
@@ -480,6 +485,11 @@ span i {
   .footerContainer {
     height: 25vh;
   }
+
+  .footerSocial {
+    width: 30px;
+    padding-right: 10px;
+  }
 }
 
 /*iPad Pro*/
@@ -551,6 +561,11 @@ span i {
 
   .footerContainer {
     height: 20vh;
+  }
+
+  .footerSocial {
+    width: 30px;
+    padding-right: 10px;
   }
 }
 
@@ -664,5 +679,10 @@ span i {
 
   .footerContainer {
     height: 25vh;
+  }
+
+  .footerSocial {
+    width: 30px;
+    padding-right: 13px;
   }
 }
