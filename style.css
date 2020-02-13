@@ -104,20 +104,20 @@ body {
 
 .head span i:before {
   display: inline-block;
-  right: -7px;
-  transform: skew(30deg, 0deg);
+  right: -3px;
+  transform: skew(40deg, 0deg);
   box-shadow: 2px -2px 2px #D3D3D3;
   z-index: -1;
-  border-radius: 0 5px 0 0;
+  border-radius: 0 6px 0 0;
 }
 
 .head span i:after {
   display: inline-block;
-  left: 9px;
+  left: 13px;
   z-index: -1;
-  transform: skew(-30deg, 0deg);
+  transform: skew(-40deg, 0deg);
   box-shadow: -2px -2px 2px #D3D3D3;
-  border-radius: 5px 0 0 0;
+  border-radius: 6px 0 0 0;
 }
 
 span i {
@@ -375,7 +375,7 @@ span i {
   position: absolute;
   right: 0px;
   height: 100%;
-  width: 47%;
+  width: 40%;
 }
 
 .footerHeading {
@@ -406,6 +406,12 @@ span i {
 
 .dropIdea:hover {
   transform: translateY(-0.5px);
+}
+
+.scrollup {
+  width: 30px;
+  margin-left: calc(50% - 15px);
+  opacity: 0.7;
 }
 
 /*iPad*/
@@ -561,6 +567,14 @@ span i {
 
   .footerContainer {
     height: 20vh;
+  }
+
+  .secondFooterComp {
+    font-size: 0.75em;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 40%;
   }
 
   .footerSocial {
