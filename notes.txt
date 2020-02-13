@@ -1,0 +1,6 @@
+Sorts:
+- By Popularity
+- By Date (Newest To Oldest)
+- By Date (Oldest To Newest)
+---- Sort By Month
+- Give me a random blog

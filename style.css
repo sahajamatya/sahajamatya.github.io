@@ -421,6 +421,8 @@ span i {
   width: 30px;
   margin-left: calc(50% - 15px);
   opacity: 0.7;
+  position: relative;
+  top: 60px;
 }
 
 .underConstruction {
