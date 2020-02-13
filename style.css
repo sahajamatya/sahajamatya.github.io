@@ -332,7 +332,7 @@ span i {
 }
 
 .footerContainer {
-  height: 40vh;
+  height: 42vh;
   margin-top: 60px;
   background: linear-gradient(rgba(20, 20, 20, .6),
       rgba(20, 20, 20, .3)),
@@ -427,6 +427,15 @@ span i {
   font-family: SFProLight;
   color: black;
   font-size: 3em;
+}
+
+.bodyElement a {
+  color: #222;
+  text-decoration: none;
+}
+
+.bodyElement a:hover {
+  text-decoration: underline;
 }
 
 /*iPad*/
