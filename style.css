@@ -363,6 +363,15 @@ span i {
   position: relative;
 }
 
+.footerContent a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerContent a:hover {
+  text-decoration: underline;
+}
+
 .firstFooterComp {
   font-size: 0.75em;
   position: relative;
@@ -412,6 +421,12 @@ span i {
   width: 30px;
   margin-left: calc(50% - 15px);
   opacity: 0.7;
+}
+
+.underConstruction {
+  font-family: SFProLight;
+  color: black;
+  font-size: 3em;
 }
 
 /*iPad*/
