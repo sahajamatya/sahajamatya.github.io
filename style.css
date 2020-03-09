@@ -317,7 +317,7 @@ span i {
 }
 
 .footerContainer {
-    height: 42vh;
+    height: 47vh;
     margin-top: 60px;
     background: linear-gradient(rgba(20, 20, 20, .6), rgba(20, 20, 20, .3)), url("img/headshot.png");
     background-repeat: no-repeat;
@@ -637,7 +637,7 @@ header {
 
 /*Laptops/Monitors*/
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
     .bodyElement {
         width: 40%;
         margin: 0 auto;
@@ -712,7 +712,7 @@ header {
         margin: 0 auto;
     }
     .footerContainer {
-        height: 40vh;
+        height: 35vh;
         margin-top: 60px;
         background: linear-gradient(rgba(20, 20, 20, .6), rgba(20, 20, 20, .3)), url("img/headshot3.png");
         background-repeat: no-repeat;
@@ -723,11 +723,50 @@ header {
     .containerHeader {
         width: 72.5%;
     }
-    .footerContainer {
-        height: 25vh;
-    }
     .footerSocial {
         width: 30px;
         padding-right: 13px;
+    }
+    .aboutBody {
+        height: 65vh;
+        position: relative;
+    }
+    .aboutMeContainer {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 53%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        font-family: HelveticaNeue;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 60%;
+        font-size: 1.1em;
+    }
+    .aboutMeLeft {
+        width: 55%;
+    }
+    .aboutTextNonMobile {
+        margin-top: 40px;
+        display: block;
+    }
+    .aboutTextMobile {
+        display: none;
+    }
+    .aboutMeLeft,
+    header {
+        text-align: left;
+    }
+    .filler {
+        width: calc(45% - 250px);
+    }
+    .headshot {
+        position: relative;
+        top: calc(95% - 190px);
+        height: 200px;
     }
 }
