@@ -523,15 +523,25 @@ header {
         width: 30px;
         padding-right: 10px;
     }
+    .aboutBody {
+        height: 75vh;
+        position: relative;
+    }
     .aboutMeContainer {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 53%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
         font-family: HelveticaNeue;
         display: flex;
         flex-direction: row;
         margin: 0 auto;
         width: 80%;
         font-size: 1.1em;
-        padding-top: 35%;
-        padding-bottom: 20%;
     }
     .aboutMeLeft {
         width: 55%;
