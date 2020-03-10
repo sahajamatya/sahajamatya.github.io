@@ -139,7 +139,7 @@ input:checked+.slider:before {
 
 .darkModeSec {
     position:absolute;
-    right: 6%;
+    right: 14%;
     bottom: 30%;
 }
 
@@ -580,6 +580,12 @@ header {
         height: 25px;
         opacity: 0.5;
         box-shadow: 0 1px 5px rgba(1, 0, 0, 0.134), 0 1px 5px rgba(1, 0, 0, 0.148), 0 1px 5px rgba(1, 0, 0, 0.16), 0 1px 5px rgba(1, 0, 0, 0.172), 0 1px 5px rgba(1, 0, 0, 0.186), 0 1px 5px rgba(1, 0, 0, 0.12);
+    }
+
+    .darkModeSec {
+        position:absolute;
+        right: 8%;
+        bottom: 30%;
     }
 
     .innerContainer {
