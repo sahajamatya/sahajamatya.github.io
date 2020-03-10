@@ -53,6 +53,54 @@ body {
     height: 85vh;
 }
 
+.navItem{
+    padding: 0 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.navItem:hover {
+    color: grey;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 1px 5px 1px grey;
+    padding: 20px 20px;
+    font-family: HelveticaNeue;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.contact {
+    padding: 6px 15px;
+    border:1px solid black;
+    border-radius: 50px;
+    color: black;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.contact:hover {
+    background-color: #306754;
+    color: white;
+    border: 1px solid #306754;
+}
+
 #particles-js {
     position: relative;
     height: 100%;
@@ -257,6 +305,7 @@ span i {
 .bodyElement {
     width: 92%;
     margin: 0 auto;
+    padding-top:70px;
 }
 
 .arrow {
@@ -460,16 +509,18 @@ header {
 /*iPad*/
 
 @media only screen and (min-width: 768px) {
-    .bodyElement {
+    Ï .bodyElement {
         width: 66%;
         margin: 0 auto;
     }
+
     .bodyText {
         width: 100%;
         font-family: HelveticaNeueLight;
         font-size: 1.1em;
         line-height: 1.3;
     }
+
     .mainHeader {
         width: 80%;
         font-family: HelveticaNeueLight;
@@ -479,6 +530,7 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .arrow {
         background-size: cover;
         border-radius: 50% 50% 50% 50%;
@@ -487,6 +539,7 @@ header {
         opacity: 0.5;
         box-shadow: 0 1px 5px rgba(1, 0, 0, 0.134), 0 1px 5px rgba(1, 0, 0, 0.148), 0 1px 5px rgba(1, 0, 0, 0.16), 0 1px 5px rgba(1, 0, 0, 0.172), 0 1px 5px rgba(1, 0, 0, 0.186), 0 1px 5px rgba(1, 0, 0, 0.12);
     }
+
     .innerContainer {
         align-content: flex-start;
         flex-basis: 40%;
@@ -503,30 +556,37 @@ header {
         flex: 1;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
     }
+
     #pubPost1,
     #pubPost2,
     #pubPost3,
     #pubPost6 {
         display: block;
     }
+
     #pubPost5,
     #pubPost4 {
         display: none;
     }
+
     .containerHeader {
         width: 87%;
     }
+
     .footerContainer {
         height: 25vh;
     }
+
     .footerSocial {
         width: 30px;
         padding-right: 10px;
     }
+
     .aboutBody {
         height: 75vh;
         position: relative;
     }
+
     .aboutMeContainer {
         margin: 0;
         position: absolute;
@@ -543,23 +603,29 @@ header {
         width: 80%;
         font-size: 1.1em;
     }
+
     .aboutMeLeft {
         width: 55%;
     }
+
     .aboutTextNonMobile {
         margin-top: 40px;
         display: block;
     }
+
     .aboutTextMobile {
         display: none;
     }
+
     .aboutMeLeft,
     header {
         text-align: left;
     }
+
     .filler {
         width: calc(45% - 250px);
     }
+
     .headshot {
         position: relative;
         top: calc(95% - 190px);
@@ -575,12 +641,14 @@ header {
         width: 66%;
         margin: 0 auto;
     }
+
     .bodyText {
         width: 100%;
         font-family: HelveticaNeueLight;
         font-size: 1.1em;
         line-height: 1.3;
     }
+
     .mainHeader {
         width: 80%;
         font-family: HelveticaNeueLight;
@@ -591,6 +659,7 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .arrow {
         background-size: cover;
         border-radius: 50% 50% 50% 50%;
@@ -599,6 +668,7 @@ header {
         opacity: 0.5;
         box-shadow: 0 1px 5px rgba(1, 0, 0, 0.134), 0 1px 5px rgba(1, 0, 0, 0.148), 0 1px 5px rgba(1, 0, 0, 0.16), 0 1px 5px rgba(1, 0, 0, 0.172), 0 1px 5px rgba(1, 0, 0, 0.186), 0 1px 5px rgba(1, 0, 0, 0.12);
     }
+
     .innerContainer {
         align-content: flex-start;
         flex-basis: 45%;
@@ -615,12 +685,15 @@ header {
         flex: 1;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
     }
+
     .containerHeader {
         width: 90%;
     }
+
     .footerContainer {
         height: 20vh;
     }
+
     .secondFooterComp {
         font-size: 0.75em;
         position: absolute;
@@ -628,6 +701,7 @@ header {
         height: 100%;
         width: 40%;
     }
+
     .footerSocial {
         width: 30px;
         padding-right: 10px;
@@ -642,12 +716,14 @@ header {
         width: 40%;
         margin: 0 auto;
     }
+
     .bodyText {
         width: 100%;
         font-family: HelveticaNeueLight;
         font-size: 1.1em;
         line-height: 1.3;
     }
+
     .mainHeader {
         font-family: HelveticaNeueLight;
         font-size: 9.0em;
@@ -658,6 +734,7 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .arrow img {
         background-size: cover;
         border-radius: 50% 50% 50% 50%;
@@ -666,9 +743,11 @@ header {
         opacity: 0.5;
         box-shadow: 0 1px 5px rgba(1, 0, 0, 0.134), 0 1px 5px rgba(1, 0, 0, 0.148), 0 1px 5px rgba(1, 0, 0, 0.16), 0 1px 5px rgba(1, 0, 0, 0.172), 0 1px 5px rgba(1, 0, 0, 0.186), 0 1px 5px rgba(1, 0, 0, 0.12);
     }
+
     .linkHead {
         text-decoration: none;
     }
+
     .containerBody {
         padding-top: 20px;
         width: 75%;
@@ -678,6 +757,7 @@ header {
         flex-wrap: wrap;
         box-sizing: border-box;
     }
+
     .innerContainer {
         flex-basis: 30%;
         min-width: 30%;
@@ -694,6 +774,7 @@ header {
         box-sizing: border-box;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
     }
+
     #pubPost1,
     #pubPost2,
     #pubPost3,
@@ -702,15 +783,18 @@ header {
     #pubPost6 {
         display: block;
     }
+
     .hint:hover .scrollDown {
         display: block;
     }
+
     .footerContent {
         color: white;
         font-family: HelveticaNeueLight;
         width: 70%;
         margin: 0 auto;
     }
+
     .footerContainer {
         height: 35vh;
         margin-top: 60px;
@@ -720,17 +804,21 @@ header {
         background-position: center center;
         background-size: cover;
     }
+
     .containerHeader {
         width: 72.5%;
     }
+
     .footerSocial {
         width: 30px;
         padding-right: 13px;
     }
+
     .aboutBody {
         height: 65vh;
         position: relative;
     }
+
     .aboutMeContainer {
         margin: 0;
         position: absolute;
@@ -747,23 +835,29 @@ header {
         width: 60%;
         font-size: 1.1em;
     }
+
     .aboutMeLeft {
         width: 55%;
     }
+
     .aboutTextNonMobile {
         margin-top: 40px;
         display: block;
     }
+
     .aboutTextMobile {
         display: none;
     }
+
     .aboutMeLeft,
     header {
         text-align: left;
     }
+
     .filler {
         width: calc(45% - 250px);
     }
+
     .headshot {
         position: relative;
         top: calc(95% - 190px);
