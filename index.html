@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
       <img src="img/darkmode.png" height=16 style="padding-right:5px;" />
       <label class="switch">
         <input type="checkbox">
-        <span class="slider round"></span>
+        <span class="slider round" onclick="darkMode()"></span>
       </label>
     </div>
   </header>
@@ -36,10 +37,24 @@
   <div class="container" id="secondPage">
     <div class="containerHeader">
       <p class="head">
-        <span class="pubPosts"><i>Published Posts</i></span>
-        <span class="upPosts"><i>Upcoming Posts</i></span>
+        <span><i class="pubPosts">Published Posts</i></span>
+        <span><i class="upPosts">Upcoming Posts</i></span>
       </p>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".pubPosts").click(function () {
+          $(".pubPosts").css("opacity", "1");
+          $(".upPosts").css("opacity", "0.5");
+        });
+        $(".upPosts").click(function () {
+          $(".pubPosts").css("opacity", "0.5");
+          $(".upPosts").css("opacity", "1");
+        });
+      });
+    </script>
+
     <div class="containerBody">
       <div class="innerContainer" id="pubPost1">
         <a href="posts/01252020integrity.html" class="linkHead">

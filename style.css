@@ -165,9 +165,6 @@ input:checked+.slider:before {
     width: 100%;
 }
 
-
-/*Fix positioning by messing with inner span i tag*/
-
 .head span {
     display: inline-block;
     float: left;
@@ -184,12 +181,10 @@ input:checked+.slider:before {
 
 .head span i:before,
 .head span i:after {
-    display: inline;
     content: " ";
     height: 30px;
     width: 70px;
     background-color: #FFF;
-    transition: all 250ms ease;
     position: absolute;
     top: -5px;
 }
@@ -383,7 +378,7 @@ span i {
     display: none;
 }
 
-.pubPosts i {
+.pubPosts {
     opacity: 0.5;
 }
 
@@ -722,14 +717,13 @@ header {
     }
 
     .allPostsHeader{
-        padding-left: 20px;
+        padding-left: 25px;
     }
 
     .allPostsBody {
         width: 80%;
         margin: 0 auto;
         padding-top: 40px;
-        
     }
 }
 
