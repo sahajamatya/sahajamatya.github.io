@@ -69,7 +69,6 @@ header {
 
 header a {
     text-decoration: none;
-    color: black;
     position: absolute;
     left: 4%;
     bottom: 30%;
@@ -114,7 +113,7 @@ header a {
 }
 
 input:checked+.slider {
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(82, 82, 82);
 }
 
 input:focus+.slider {
@@ -125,7 +124,7 @@ input:checked+.slider:before {
     -webkit-transform: translateX(12px);
     -ms-transform: translateX(12px);
     transform: translateX(12px);
-    background-color: grey;
+    background-color: white;
 }
 
 /* Rounded sliders */
@@ -321,6 +320,7 @@ span i {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color:black;
 }
 
 .underText {
@@ -583,6 +583,38 @@ header {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.homeLink{
+    color:black;
+}
+
+/* .navbar{
+    background-color: white;
+}
+.dnavbar{
+    background-color: #292929;
+}
+
+.dTextColor{
+    color:#E5E4E2;
+}
+.bodyClass{
+    background-color: white;
+}
+.dbodyClass{
+    background-color: #292929;
+}
+.dmainHeader {
+    font-family: HelveticaNeueLight;
+    font-size: 3.2em;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#E5E4E2;
+} */
 
 /*iPad*/
 
@@ -960,3 +992,4 @@ header {
 
     
 }
+

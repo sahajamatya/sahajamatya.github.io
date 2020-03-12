@@ -8,14 +8,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="bodyClass">
   <header class="navbar">
-    <a href="index.html" title="sahajamatya.com">@sahajamatya</a>
+    <a href="index.html" title="sahajamatya.com" class="homeLink">@sahajamatya</a>
     <div class="darkModeSec">
       <img src="img/darkmode.png" height=16 style="padding-right:5px;" />
       <label class="switch">
         <input type="checkbox">
-        <span class="slider round" onclick="darkMode()"></span>
+        <span class="slider round" id="darkMode"></span>
       </label>
     </div>
   </header>
@@ -52,6 +52,12 @@
           $(".pubPosts").css("opacity", "0.5");
           $(".upPosts").css("opacity", "1");
         });
+        // $("#darkMode").click(function(){
+        //   $(".navbar, .dnavbar").toggleClass("navbar dnavbar");
+        //   $(".homeLink, .dTextColor").toggleClass("homeLink dTextColor");
+        //   $(".bodyClass, .dbodyClass").toggleClass("bodyClass dbodyClass");
+        //   $(".mainHeader, .dmainHeader").toggleClass("mainHeader dmainHeader");
+        // });
       });
     </script>
 
