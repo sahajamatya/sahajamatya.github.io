@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body class="bodyClass">
@@ -182,8 +183,57 @@
         <p><a href="allPosts.html">All posts</a></p>
         <p>Things I Would Like to Write About</p>
         <p><a href="about.html">About Me</a></p>
-        <p class="dropIdea">Drop an Idea &nbsp;<img src="img/box.svg" style="width:15px; margin-bottom:-1.5px" /></p>
+        <p class="dropIdea" id="modalBtn">Drop an Idea &nbsp;<img src="img/box.svg"
+            style="width:15px; margin-bottom:-1.5px" /></p>
         <div class="footerCopyright">
+
+          <div id="simpleModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="closeBtn"><img src="img/close.png" width=20></span>
+                <h2>Drop an Idea</h2>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <label>Full Name/Alias:</label><br><br>
+                  <input type="text" id="fname" name="fname" class="fullNameInput"/><br>
+                </form>
+                <p>[Include name(optional), text]</p>
+              </div>
+              <div class="modal-footer">
+                <span class="dropIdeaSub">
+                  Submit
+                </span>
+                <span class="dropIdeaCancel">
+                  Cancel
+                </span>
+              </div>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById('simpleModal');
+            var modalBtn = document.getElementById('modalBtn');
+            var closeBtn = document.getElementsByClassName('closeBtn')[0];
+            var cancelBtn = document.getElementsByClassName('dropIdeaCancel')[0];
+
+            modalBtn.addEventListener('click', openModal);
+            closeBtn.addEventListener('click', closeModal);
+            window.addEventListener('click', clickOutside);
+            cancelBtn.addEventListener('click',closeModal);
+            function openModal() {
+              modal.style.display = 'block';
+            }
+
+            function closeModal() {
+              modal.style.display = 'none';
+            }
+
+            function clickOutside(e) {
+              if (e.target == modal) {
+                modal.style.display = 'none';
+              }
+            }
+          </script>
           &copy; 2020, Sahaj Amatya
         </div>
       </div>
