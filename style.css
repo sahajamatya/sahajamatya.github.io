@@ -726,7 +726,7 @@ header {
 .fullNameInput{
     -webkit-appearance: none;
     border:1px solid #E0E5EC;
-    box-shadow:
+    -webkit-box-shadow:
     6px 6px 16px #A3B1C6,
     -6px -6px 16px #FFFFFF;
     background-color: #E0E5EC;
@@ -744,7 +744,7 @@ header {
     -webkit-appearance: none;
     width:100%;
     border:1px solid #E0E5EC;
-    box-shadow:
+    -webkit-box-shadow:
     6px 6px 16px #A3B1C6,
     -6px -6px 16px  #FFFFFF;
     background-color: #E0E5EC;
