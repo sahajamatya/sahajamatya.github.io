@@ -724,6 +724,7 @@ header {
 }
 
 .fullNameInput{
+    -webkit-appearance: none;
     border:1px solid #E0E5EC;
     box-shadow:
     6px 6px 16px #A3B1C6,
@@ -740,6 +741,7 @@ header {
     outline:none;
 }
 .dropIdeaText{
+    -webkit-appearance: none;
     width:100%;
     border:1px solid #E0E5EC;
     box-shadow:
