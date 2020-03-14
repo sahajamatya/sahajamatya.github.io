@@ -45,25 +45,131 @@
 
     <script>
       $(document).ready(function () {
+        $(".upcomingPosts").hide();
         $(".pubPosts").click(function () {
-          $(".pubPosts").css("opacity", "1");
           $(".upPosts").css("opacity", "0.5");
+          $(".pubPosts").css("opacity", "1");
+          $(".upcomingPosts").hide();
+          $(".publishedPosts").fadeIn(500);
         });
         $(".upPosts").click(function () {
           $(".pubPosts").css("opacity", "0.5");
           $(".upPosts").css("opacity", "1");
+          $(".upcomingPosts").fadeIn(500);
+          $(".publishedPosts").hide();
         });
-        // $("#darkMode").click(function(){
-        //   $(".navbar, .dnavbar").toggleClass("navbar dnavbar");
-        //   $(".homeLink, .dTextColor").toggleClass("homeLink dTextColor");
-        //   $(".bodyClass, .dbodyClass").toggleClass("bodyClass dbodyClass");
-        //   $(".mainHeader, .dmainHeader").toggleClass("mainHeader dmainHeader");
-        // });
+
+
       });
     </script>
 
-    <div class="containerBody">
+    <div class="publishedPosts">
       <div class="innerContainer" id="pubPost1">
+        <a href="posts/01252020integrity.html" class="linkHead">
+          Project Picasso
+          <div class="description">
+            <div class="textDesc">
+              <p class="descText">
+                Picasso is a personal CNC Plotter I built over the winter break (2019).
+                In this blog, I document my experience building a machine for the first
+                time.
+              </p>
+            </div>
+            <div class="imgBox"><img src="img/picasso.JPG">
+            </div>
+          </div>
+          <div class="dateBox">
+            <p class="date">Published Jan. 25, 2020 &nbsp;&#8226;&nbsp; 4 min read</p>
+          </div>
+        </a>
+      </div>
+      <div class="innerContainer" id="pubPost2">
+        <a href="posts/01252020integrity.html" class="linkHead">
+          Dissecting the Life of Pablo
+          <div class="description">
+            <div class="textDesc">
+              <p class="descText">
+                Dissecting The Life Of Pablo, Pt. 1: Kanye West - Famous
+              </p>
+            </div>
+            <div class="imgBox"><img src="img/pablo.jpg"></div>
+          </div>
+          <div class="dateBox">
+            <p class="date">Published Jan. 04, 2020 &nbsp;&#8226;&nbsp; 4 min read</p>
+          </div>
+        </a>
+      </div>
+      <div class="innerContainer" id="pubPost3">
+        <a href="posts/01252020integrity.html" class="linkHead">
+          On Science - The Endless Frontier
+          <div class="description">
+            <div class="textDesc">
+              <p class="descText">
+                Correspondence between then POTUS Franklin Delano Roosevelt and
+                Dr. Vannevar Bush
+              </p>
+            </div>
+            <div class="imgBox"><img src="img/fdr.jpg"></div>
+          </div>
+          <div class="dateBox">
+            <p class="date">Published Jan. 04, 2020 &nbsp;&#8226;&nbsp; 4 min read</p>
+          </div>
+        </a>
+      </div>
+      <div class="innerContainer" id="pubPost4">
+        <a href="posts/01252020integrity.html" class="linkHead">
+          On Social Media Addiction | Part I
+          <div class="description">
+            <div class="textDesc">
+              <p class="descText">
+                World history is the mind's effort to understand itself.
+              </p>
+            </div>
+            <div class="imgBox"><img src="img/thought.jpeg"></div>
+          </div>
+          <div class="dateBox">
+            <p class="date">Published Jan. 04, 2020 &nbsp;&#8226;&nbsp; 4 min read</p>
+          </div>
+        </a>
+      </div>
+      <div class="innerContainer" id="pubPost5">
+        <a href="posts/01252020integrity.html" class="linkHead">
+          Dimensional Implications of the Sapir-Whorf Hypothesis
+          <div class="description">
+            <div class="textDesc">
+              <p class="descText">
+                The Sapir-Whorf hypothesis posits that a language
+                one speaks has an adverse correlation to how s/he
+                perceives and categorizes experiences.
+              </p>
+            </div>
+            <div class="imgBox"><img src="img/gradatim.JPG"></div>
+          </div>
+          <div class="dateBox">
+            <p class="date">Published Jan. 04, 2020 &nbsp;&#8226;&nbsp; 4 min read</p>
+          </div>
+        </a>
+      </div>
+      <div class="innerContainer" id="pubPost6">
+        <a href="posts/02062020bukowski.html" class="linkHead">
+          roll the dice - Charles Bukowski
+          <div class="description">
+            <div class="textDesc">
+              <p class="descText">
+                A poem on going all the way, by Charles Bukowski.
+              </p>
+            </div>
+            <div class="imgBox"><img src="img/bukowski.jpg"></div>
+          </div>
+          <div class="dateBox">
+            <p class="date">Published Feb. 06, 2020 &nbsp;&#8226;&nbsp; 3 min read</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="upcomingPosts">
+      <div class="innerContainer" id="upPost1">
         <a href="posts/01252020integrity.html" class="linkHead">
           Integrity of the Individual
           <div class="description">
@@ -80,7 +186,7 @@
           </div>
         </a>
       </div>
-      <div class="innerContainer" id="pubPost2">
+      <div class="innerContainer" id="upPost2">
         <a href="posts/01252020integrity.html" class="linkHead">
           Project Picasso
           <div class="description">
@@ -98,7 +204,7 @@
           </div>
         </a>
       </div>
-      <div class="innerContainer" id="pubPost3">
+      <div class="innerContainer" id="upPost3">
         <a href="posts/01252020integrity.html" class="linkHead">
           Lorem Ipsum
           <div class="description">
@@ -121,7 +227,7 @@
           </div>
         </a>
       </div>
-      <div class="innerContainer" id="pubPost4">
+      <div class="innerContainer" id="upPost4">
         <a href="posts/01252020integrity.html" class="linkHead">
           Layers in Communicating Thought
           <div class="description">
@@ -137,7 +243,7 @@
           </div>
         </a>
       </div>
-      <div class="innerContainer" id="pubPost5">
+      <div class="innerContainer" id="upPost5">
         <a href="posts/01252020integrity.html" class="linkHead">
           Gradatim Ferociter
           <div class="description">
@@ -153,7 +259,7 @@
           </div>
         </a>
       </div>
-      <div class="innerContainer" id="pubPost6">
+      <div class="innerContainer" id="upPost6">
         <a href="posts/02062020bukowski.html" class="linkHead">
           roll the dice - Charles Bukowski
           <div class="description">
@@ -196,7 +302,7 @@
               <div class="modal-body">
                 <form action="">
                   <label>Name/Alias:</label><br><br>
-                  <input type="text" id="fname" name="fname" class="fullNameInput" placeholder="Optional"/><br><br>
+                  <input type="text" id="fname" name="fname" class="fullNameInput" placeholder="Optional" /><br><br>
                   <label>Idea:</label><br><br>
                   <textarea placeholder="" class="dropIdeaText"></textarea>
                 </form>
@@ -220,7 +326,7 @@
             modalBtn.addEventListener('click', openModal);
             closeBtn.addEventListener('click', closeModal);
             window.addEventListener('click', clickOutside);
-            cancelBtn.addEventListener('click',closeModal);
+            cancelBtn.addEventListener('click', closeModal);
             function openModal() {
               modal.style.display = 'block';
             }

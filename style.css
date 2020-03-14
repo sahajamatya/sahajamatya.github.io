@@ -175,7 +175,7 @@ input:checked+.slider:before {
     top: 15px;
     width: 155px;
     margin: 0px;
-    padding: 0px;
+    padding-left: 12px;
 }
 
 .head span i:before,
@@ -199,7 +199,7 @@ input:checked+.slider:before {
 
 .head span i:after {
     display: inline-block;
-    left: 13px;
+    left: 25px;
     z-index: -1;
     transform: skew(-40deg, 0deg);
     box-shadow: -2px -2px 2px #D3D3D3;
@@ -214,7 +214,7 @@ span i {
     overflow: hidden;
 }
 
-.containerBody {
+.upcomingPosts, .publishedPosts {
     padding-top: 20px;
     width: 92%;
     display: flex;
@@ -241,8 +241,7 @@ span i {
     -moz-transition: 0.1s ease-in-out;
     -o-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
-    /* position: relative;
-  animation: animateright 1s; */
+    position: relative;
 }
 
 .innerContainer:hover {
@@ -260,7 +259,7 @@ span i {
     border-radius: 3px;
 }
 
-.containerBody {
+.upcomingPosts, .publishedPosts {
     padding-top: 20px;
     display: flex;
     justify-content: flex-end;
@@ -272,6 +271,7 @@ span i {
     width: 100%;
     height: 126px;
     font-size: 0.75em;
+    position:relative;
 }
 
 .textDesc {
@@ -301,7 +301,9 @@ span i {
 
 .dateBox {
     width: 100%;
+    position:absolute;
     height: 20px;
+    bottom:5px;
 }
 
 .date {
@@ -373,12 +375,12 @@ span i {
     line-height: 1.16;
 }
 
-#pubPost4,
-#pubPost5 {
+#pubPost4,#upPost4,
+#pubPost5,#upPost5 {
     display: none;
 }
 
-.pubPosts {
+.upPosts {
     opacity: 0.5;
 }
 
@@ -594,7 +596,6 @@ header {
 .dnavbar{
     background-color: #292929;
 }
-
 .dTextColor{
     color:#E5E4E2;
 }
@@ -783,18 +784,19 @@ header {
         color: black;
         font-size: 1.2em;
         flex: 1;
+        position:relative;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
     }
 
-    #pubPost1,
-    #pubPost2,
-    #pubPost3,
-    #pubPost6 {
+    #pubPost1, #upPost1,
+    #pubPost2, #upPost2,
+    #pubPost3, #upPost3,
+    #pubPost6, #upPost6 {
         display: block;
     }
 
-    #pubPost5,
-    #pubPost4 {
+    #pubPost5, #upPost5,
+    #pubPost4, #upPost4 {
         display: none;
     }
 
@@ -1007,7 +1009,7 @@ header {
         text-decoration: none;
     }
 
-    .containerBody {
+    .upcomingPosts, .publishedPosts {
         padding-top: 20px;
         width: 85%;
         display: flex;
@@ -1031,15 +1033,16 @@ header {
         font-size: 1.2em;
         flex: 1;
         box-sizing: border-box;
+        position:relative;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
     }
 
-    #pubPost1,
-    #pubPost2,
-    #pubPost3,
-    #pubPost4,
-    #pubPost5,
-    #pubPost6 {
+    #pubPost1, #upPost1,
+    #pubPost2, #upPost2,
+    #pubPost3, #upPost3,
+    #pubPost4, #upPost4,
+    #pubPost5, #upPost5,
+    #pubPost6, #upPost6 {
         display: block;
     }
 
@@ -1134,4 +1137,3 @@ header {
     }
     
 }
-
