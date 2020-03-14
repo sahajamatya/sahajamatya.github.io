@@ -770,12 +770,17 @@ header {
     position:absolute;
     top:50px;
     right:4%;
+    background-color: white;
+    opacity:0.9;
 }
 
 .darkModeMsg p{
   margin-top:10px;
 }
 
+.bukowskiImage{
+    display: none;
+}
 /*iPad*/
 
 @media only screen and (min-width: 768px) {
@@ -1197,5 +1202,13 @@ header {
         color:black;
         border-radius: 4px;
     }
-    
+    .bukowskiImage{
+        display: block;
+        width:400px;
+        position:sticky;
+        position: -webkit-sticky;
+        top: 300px;
+        margin-left:400px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    }
 }

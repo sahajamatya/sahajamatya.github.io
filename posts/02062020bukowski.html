@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
+<script>
+    $(document).ready(function () {
+        $(".darkModeMsg").hide();
+        $(".slider").click(function () {
+            $(".darkModeMsg").show(500);
+            setTimeout(function () {
+                $(".darkModeMsg").hide(500);
+            }, 2000);
+        });
+    });
+</script>
 
 <body>
     <header class="navbar">
@@ -16,6 +29,9 @@
                 <input type="checkbox">
                 <span class="slider round"></span>
             </label>
+        </div>
+        <div class="darkModeMsg">
+            <p>Feature coming soon.</p>
         </div>
     </header>
     <br>
@@ -40,55 +56,57 @@
                 </td>
             </tr>
         </table>
-
-        <span class="bodyText">
-            <p>
-                if you're going to try, go all the<br>
-                way.<br>
-                otherwise, don't even start.<br><br>
-                if you're going to try, go all the<br>
-                way. this could mean losing girlfriends,<br>
-                wives, relatives, jobs and<br>
-                maybe your mind.<br><br>
-                go all the way.<br>
-                it could mean not eating for 3 or<br>
-                4 days.<br>
-                it could mean freezing on a<br>
-                park bench.<br>
-                it could mean jail,<br>
-                it could mean derision,<br>
-                mockery,<br>
-                isolation.<br>
-                isolation is the gift,<br>
-                all the others are a test of your<br>
-                endurance, of<br>
-                how much you really want to<br>
-                do it.<br>
-                and you'll do it<br>
-                despite rejection and the<br>
-                worst odds<br>
-                and it will be better than<br>
-                anything else<br>
-                you can imagine.<br><br>
-                if you're going to try,<br>
-                go all the way.<br>
-                there is no other feeling like<br>
-                that.<br>
-                you will be aline with the<br>
-                gods<br>
-                and the nights will flame with<br>
-                fire.<br><br>
-                do it, do it, do it.<br>
-                do it.<br><br>
-                all the way<br>
-                all the way.<br>
-                you will ride life straight to<br>
-                perfect laughter,<br>
-                it's the only good fight<br>
-                there is.<br><br>
-                <i>- Charles Bukowski</i>
-            </p>
-        </span>
+        <div class="bukowskiBody">
+            <span class="bodyText">
+                <p>
+                    if you're going to try, go all the<br>
+                    way.<br>
+                    otherwise, don't even start.<br><br>
+                    if you're going to try, go all the<br>
+                    way. this could mean losing girlfriends,<br>
+                    wives, relatives, jobs and<br>
+                    maybe your mind.<br><br>
+                    go all the way.<br>
+                    it could mean not eating for 3 or<br>
+                    4 days.<br>
+                    it could mean freezing on a<br>
+                    park bench.<br>
+                    it could mean jail,<br>
+                    it could mean derision,<br>
+                    mockery,<br>
+                    isolation.<br>
+                    isolation is the gift,<br>
+                    all the others are a test of your<br>
+                    endurance, of<br>
+                    how much you really want to<br>
+                    do it.<br>
+                    and you'll do it<br>
+                    despite rejection and the<br>
+                    worst odds<br>
+                    and it will be better than<br>
+                    anything else<br>
+                    you can imagine.<br><br>
+                    if you're going to try,<br>
+                    go all the way.<br>
+                    there is no other feeling like<br>
+                    that.<br>
+                    you will be aline with the<br>
+                    gods<br>
+                    and the nights will flame with<br>
+                    fire.<br><br>
+                    do it, do it, do it.<br>
+                    do it.<br><br>
+                    all the way<br>
+                    all the way.<br>
+                    you will ride life straight to<br>
+                    perfect laughter,<br>
+                    it's the only good fight<br>
+                    there is.<br><br>
+                    <i>- Charles Bukowski</i>
+                </p>
+            </span>
+            <!-- <img src="../img/bukowskiPost.jpg" class="bukowskiImage" /> -->
+        </div>
     </div>
     <div class="footerContainer" id="footer">
         <div class="upperLip">&nbsp;</div>
@@ -102,6 +120,56 @@
                 <p class="dropIdea">Drop an Idea &nbsp;<img src="../img/box.svg"
                         style="width:15px; margin-bottom:-1.5px" /></p>
                 <div class="footerCopyright">
+
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="closeBtn"><img src="../img/close.png" width=20></span>
+                                <h2>Drop an Idea</h2>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <label>Name/Alias:</label><br><br>
+                                    <input type="text" id="fname" name="fname" class="fullNameInput"
+                                        placeholder="Optional" /><br><br>
+                                    <label>Idea:</label><br><br>
+                                    <textarea placeholder="" class="dropIdeaText"></textarea>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <span class="dropIdeaSub">
+                                    Submit
+                                </span>
+                                <span class="dropIdeaCancel">
+                                    Cancel
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var modal = document.getElementById('simpleModal');
+                        var modalBtn = document.getElementsByClassName('dropIdea')[0];
+                        var closeBtn = document.getElementsByClassName('closeBtn')[0];
+                        var cancelBtn = document.getElementsByClassName('dropIdeaCancel')[0];
+
+                        modalBtn.addEventListener('click', openModal);
+                        closeBtn.addEventListener('click', closeModal);
+                        window.addEventListener('click', clickOutside);
+                        cancelBtn.addEventListener('click', closeModal);
+                        function openModal() {
+                            modal.style.display = 'block';
+                        }
+
+                        function closeModal() {
+                            modal.style.display = 'none';
+                        }
+
+                        function clickOutside(e) {
+                            if (e.target == modal) {
+                                modal.style.display = 'none';
+                            }
+                        }
+                    </script>
                     &copy; 2020, Sahaj Amatya
                 </div>
             </div>
