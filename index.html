@@ -19,6 +19,7 @@
         <span class="slider round" id="darkMode"></span>
       </label>
     </div>
+    <div class="darkModeMsg"><p>Feature coming soon.</p></div>
   </header>
   <div id="particles-js"></div>
 
@@ -46,6 +47,7 @@
     <script>
       $(document).ready(function () {
         $(".upcomingPosts").hide();
+        $(".darkModeMsg").hide();
         $(".pubPosts").click(function () {
           $(".upPosts").css("opacity", "0.5");
           $(".pubPosts").css("opacity", "1");
@@ -57,6 +59,12 @@
           $(".upPosts").css("opacity", "1");
           $(".upcomingPosts").fadeIn(500);
           $(".publishedPosts").hide();
+        });
+        $("#darkMode").click(function () {
+          $(".darkModeMsg").show(500);
+          setTimeout(function () {
+            $(".darkModeMsg").hide(500);
+          }, 2000);
         });
       });
     </script>
