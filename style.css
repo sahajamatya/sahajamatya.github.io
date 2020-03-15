@@ -411,6 +411,7 @@ span i {
 
 .footerContainer {
     height: 47vh;
+    min-height: 350px;
     margin-top: 60px;
     background: linear-gradient(rgba(20, 20, 20, .6), rgba(20, 20, 20, .3)), url("img/headshot.png");
     background-repeat: no-repeat;
@@ -799,7 +800,11 @@ audio{
     text-align: center;
     font-size:0.6em;
 }
-
+.pabloAlbumArt{
+    width:60%;
+    float:right;
+    padding:10px;
+}
 /*iPad*/
 
 @media only screen and (min-width: 768px) {
@@ -1163,6 +1168,7 @@ audio{
 
     .footerContainer {
         height: 35vh;
+        min-height: 400px;
         margin-top: 60px;
         background: linear-gradient(rgba(20, 20, 20, .6), rgba(20, 20, 20, .3)), url("img/headshot3.png");
         background-repeat: no-repeat;
