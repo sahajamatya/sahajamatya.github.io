@@ -611,6 +611,7 @@ header {
     height: 100%;
     width: 100%;
     overflow: auto;
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
 
@@ -792,6 +793,7 @@ audio{
     border-radius:50px;
     display: table;
     margin: 0 auto;
+    -webkit-margin: 0 auto;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
