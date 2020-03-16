@@ -880,6 +880,7 @@ audio {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-shrink: 0;
 }
 
 .d3imagesTitle {
