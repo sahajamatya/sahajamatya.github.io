@@ -346,7 +346,7 @@ span i {
 .bodyElement {
     width: 92%;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .arrow {
@@ -798,7 +798,8 @@ header {
     font-size: 0.9em;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
     background-color: #eee;
-    border-radius: 4px;;
+    border-radius: 4px;
+    ;
 }
 
 audio {
@@ -897,11 +898,11 @@ audio {
     border-radius: 4px;
 }
 
-.quotation{
+.quotation {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
-    padding:15px;
+    padding: 15px;
     background-color: #eee;
-    font-size:0.8em;
+    font-size: 0.8em;
     border-radius: 4px;
 }
 
@@ -1091,8 +1092,9 @@ audio {
 
 @media only screen and (min-width: 1000px) {
     .bodyElement {
-        width: 66%;
+        width: 75%;
         margin: 0 auto;
+        padding-top: 60px;
     }
 
     .bodyText {
