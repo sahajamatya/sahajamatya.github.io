@@ -378,10 +378,6 @@ span i {
     line-height: 1.25;
 }
 
-.bodyText img{
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
-}
-
 #pubPost4,
 #upPost4,
 #pubPost5,
@@ -868,6 +864,21 @@ audio {
     background-color: #292929;
 }
 
+.d3images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.d3imagesTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top:10px;
+}
+
+.addShadow{
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+}
 /*iPad*/
 
 @media only screen and (min-width: 768px) {
