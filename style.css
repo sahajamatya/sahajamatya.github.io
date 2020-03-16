@@ -364,6 +364,14 @@ span i {
     padding-top: 25px;
 }
 
+.blogTitle {
+    padding: 20px 0;
+}
+
+.bodyText img {
+    cursor: pointer;
+}
+
 .underline {
     font-family: HelveticaNeueLight;
     opacity: 50%;
@@ -785,9 +793,12 @@ header {
 }
 
 .lyrics {
-    padding: 20px 0;
+    padding: 25px 0;
     text-align: center;
     font-size: 0.9em;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    background-color: #eee;
+    border-radius: 4px;;
 }
 
 audio {
@@ -819,8 +830,8 @@ audio {
     font-size: 1.25em;
 }
 
-.subText{
-    margin-left:30px;
+.subText {
+    margin-left: 30px;
 }
 
 .blogTable {
@@ -844,17 +855,18 @@ audio {
     background-color: #eeeeee;
 }
 
-.codeBlock{
+.codeBlock {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
-    padding:15px;
+    padding: 15px;
     background-color: #eee;
+    border-radius: 4px;
 }
 
-.blogTable td{
-    padding:7px 10px;
+.blogTable td {
+    padding: 7px 10px;
 }
 
-.blogTable a{
+.blogTable a {
     text-decoration: none;
 }
 
@@ -864,21 +876,34 @@ audio {
     background-color: #292929;
 }
 
-.d3images{
+.d3images {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-.d3imagesTitle{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top:10px;
 }
 
-.addShadow{
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+.d3imagesTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
+
+.addShadow {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.quotation{
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    padding:15px;
+    background-color: #eee;
+    font-size:0.8em;
+    border-radius: 4px;
+}
+
+
 /*iPad*/
 
 @media only screen and (min-width: 768px) {

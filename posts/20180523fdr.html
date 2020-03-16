@@ -17,7 +17,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<script type="text/javascript" src="../functions.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".darkModeMsg").hide();
+        $(".slider").click(function () {
+            $(".darkModeMsg").show(500);
+            setTimeout(function () {
+                $(".darkModeMsg").hide(500);
+            }, 2000);
+        });
+        $('img').click(function () {
+            window.open($(this)[0].src, '_blank');
+        });
+    });
+</script>
 
 <body>
     <header class="navbar">
@@ -35,38 +48,60 @@
     </header>
     <br>
     <div class="bodyElement" id="fdrBody">
-        <span class="header">On Science - The Endless Frontier: Correspondence between then POTUS Franklin Delano Roosevelt and Dr. Vannevar
-            Bush </span><br>
-        <span class="underline">Published on May 23, 2018 by <a href="../about.html">Sahaj Amatya</a></span><br>
-        <table>
-            <tr valign="center">
-                <td>
-                    <a href="../about.html"><img src="../img/headshot.jpg" alt="Sahaj Amatya" width=50 length=50
-                            style="border-radius:50%;"></a>
-                </td>
-                <td>&nbsp;
-                    <a href="https://twitter.com/sahaj_amatya" style="color:black;"><i
-                            class="fa fa-twitter"></i></a>&nbsp;
-                    <a href="https://instagram.com/sahajamatya" style="color:black;"><i
-                            class="fa fa-instagram"></i></a>&nbsp;
-                    <a href="../img/social/snapcode.png" style="color:black;"><i class="fa fa-snapchat"></i></a>&nbsp;
-                    <a href="https://www.linkedin.com/in/sahajamatya" style="color:black;"><i
-                            class="fa fa-linkedin"></i></a>&nbsp;
-                    <a href="https://github.com/sahajamatya" style="color:black;"><i class="fa fa-github"></i></a>&nbsp;
-                </td>
-            </tr>
-        </table>
+        <div class="blogTitle">
+            <span class="header">On Science - The Endless Frontier: Correspondence between then POTUS Franklin Delano
+                Roosevelt and Dr. Vannevar
+                Bush </span><br>
+            <span class="underline">Published on May 23, 2018 by <a href="../about.html">Sahaj Amatya</a></span><br>
+            <table>
+                <tr valign="center">
+                    <td>
+                        <a href="../about.html"><img src="../img/headshot.jpg" alt="Sahaj Amatya" width=50 length=50
+                                style="border-radius:50%;"></a>
+                    </td>
+                    <td>&nbsp;
+                        <a href="https://twitter.com/sahaj_amatya" style="color:black;"><i
+                                class="fa fa-twitter"></i></a>&nbsp;
+                        <a href="https://instagram.com/sahajamatya" style="color:black;"><i
+                                class="fa fa-instagram"></i></a>&nbsp;
+                        <a href="../img/social/snapcode.png" style="color:black;"><i
+                                class="fa fa-snapchat"></i></a>&nbsp;
+                        <a href="https://www.linkedin.com/in/sahajamatya" style="color:black;"><i
+                                class="fa fa-linkedin"></i></a>&nbsp;
+                        <a href="https://github.com/sahajamatya" style="color:black;"><i
+                                class="fa fa-github"></i></a>&nbsp;
+                    </td>
+                </tr>
+            </table>
+        </div>
         <div class="bodyText">
+            <div class="d3imagesTitle">
+                <span class="audioDescription">Scans of FDR's original letter</span>
+            </div>
+            <div class="d3images">
+                <img src="../img/20180523fdr/page1.png" style="width:48%;height:auto" class="addShadow">
+                <img src="../img/20180523fdr/page2.png" style="width:48%;height:auto" class="addShadow">
+            </div>
+            <div class="d3imagesTitle">
+                <span class="audioDescription">Page 1</span>
+                <span class="audioDescription">Page 2</span>
+            </div>
             <p>
                 On November 17, 1944, just as the second World War was heading towards its end, the then President of
                 the
                 United States of America composed a letter addressed to Dr. Vannevar Bush, who was the Director of The
-                Office of Scientific Research and Development. By writing this letter, he aimed to bring “improvement
+                Office of Scientific Research and Development. By writing this letter, he aimed to bring "improvement
                 [in]
                 the national health, the creation of new enterprises bringing new jobs, and the betterment of the
                 national
                 standard of living” through the means of science, research, and technology.
             </p>
+            <div class="d3images">
+                <img src="../img/20180523fdr/vannevarBush.jpg" style="width:100%;height:auto" class="addShadow">
+            </div>
+            <div class="d3imagesTitle">
+                <span class="audioDescription">Dr. Vannevar Bush (1890-1974)</span>
+            </div>
             During the second World War, progress in the field of science and technology had skyrocketed. We saw rapid
             achievements of new milestones in computing, aviation, geo-location, communication and of course weapons of
             mass destruction. The US had a great hand in contributing to these achievements. Such achievements would not
@@ -83,20 +118,20 @@
                 of
                 peace, evident from the following piece of paragraph from his letter.
             </p>
-            <p>
-                New frontiers of the mind are before us, and if they are pioneered with the same vision, boldness, and
+            <p class="quotation">
+                "New frontiers of the mind are before us, and if they are pioneered with the same vision, boldness, and
                 drive with which we have waged this war we can create a fuller and more fruitful employment and a fuller
-                and more fruitful life.
+                and more fruitful life."
             </p>
             <p>
                 What I personally am amazed by is the sincerity reflected by his writings. The sincerity of an honest
                 man loyal to his countrymen, dedicated to the betterment of his fellow citizens' lives. In his letter,
                 he also asks Dr. Bush:
             </p>
-            <p>
-                Can an effective program be proposed for discovering and developing scientific talent in American youth
+            <p class="quotation">
+                "Can an effective program be proposed for discovering and developing scientific talent in American youth
                 so that the continuing future of scientific research in this country may be assured on a level
-                comparable to what has been done during the war?
+                comparable to what has been done during the war?"
             </p>
             <p>
                 The reply Dr. Bush gave in return has had a significant role in making America the technological
