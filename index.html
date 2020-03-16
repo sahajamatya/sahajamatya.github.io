@@ -7,7 +7,7 @@
   <meta name="description" content="This website is a collection of my projects and my meditations.">
   <meta name="keywords" content="sahaj amatya, sahaj, amatya">
   <meta name="author" content="Sahaj Amatya">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" id="style">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -23,7 +23,9 @@
         <span class="slider round" id="darkMode"></span>
       </label>
     </div>
-    <div class="darkModeMsg"><p>Feature coming soon.</p></div>
+    <div class="darkModeMsg">
+      <p>Feature coming soon.</p>
+    </div>
   </header>
   <div id="particles-js"></div>
 
@@ -38,7 +40,38 @@
 
   <script type="text/javascript" src="js/particles.js"></script>
   <script type="text/javascript" src="js/particles.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <script id="themeSelector" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      $("#themeSelector").attr("src", "js/lightMode.js");
+      $(".upcomingPosts").hide();
+      $(".darkModeMsg").hide();
+      $(".pubPosts").click(function () {
+        $(".upPosts").css("opacity", "0.5");
+        $(".pubPosts").css("opacity", "1");
+        $(".upcomingPosts").hide();
+        $(".publishedPosts").fadeIn(500);
+      });
+      $(".upPosts").click(function () {
+        $(".pubPosts").css("opacity", "0.5");
+        $(".upPosts").css("opacity", "1");
+        $(".upcomingPosts").fadeIn(500);
+        $(".publishedPosts").hide();
+      });
+      $("#darkMode").click(function () {
+        // if ($("#style").attr("href") == "style.css") {
+        //   $("#style").attr("href", "darkMode.css");
+        // } else {
+        //   $("#style").attr("href", "style.css");  
+        // }
+        $(".darkModeMsg").show(500);
+        setTimeout(function () {
+          $(".darkModeMsg").hide(500);
+        }, 2000);
+      });
+    });
+  </script>
+
 
   <div class="container" id="secondPage">
     <div class="containerHeader">
@@ -48,30 +81,7 @@
       </p>
     </div>
 
-    <script>
-      $(document).ready(function () {
-        $(".upcomingPosts").hide();
-        $(".darkModeMsg").hide();
-        $(".pubPosts").click(function () {
-          $(".upPosts").css("opacity", "0.5");
-          $(".pubPosts").css("opacity", "1");
-          $(".upcomingPosts").hide();
-          $(".publishedPosts").fadeIn(500);
-        });
-        $(".upPosts").click(function () {
-          $(".pubPosts").css("opacity", "0.5");
-          $(".upPosts").css("opacity", "1");
-          $(".upcomingPosts").fadeIn(500);
-          $(".publishedPosts").hide();
-        });
-        $("#darkMode").click(function () {
-          $(".darkModeMsg").show(500);
-          setTimeout(function () {
-            $(".darkModeMsg").hide(500);
-          }, 2000);
-        });
-      });
-    </script>
+
 
     <div class="publishedPosts">
       <div class="innerContainer" id="pubPost1">
@@ -294,8 +304,7 @@
         <p><a href="allPosts.html">All posts</a></p>
         <p><a href="tiwltwa.html">Things I Would Like to Write About</a></p>
         <p><a href="about.html">About Me</a></p>
-        <p class="dropIdea">Drop an Idea &nbsp;<img src="img/box.svg"
-            style="width:15px; margin-bottom:-1.5px" /></p>
+        <p class="dropIdea">Drop an Idea &nbsp;<img src="img/box.svg" style="width:15px; margin-bottom:-1.5px" /></p>
         <div class="footerCopyright">
 
           <div id="simpleModal" class="modal">
