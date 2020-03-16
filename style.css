@@ -378,6 +378,10 @@ span i {
     line-height: 1.25;
 }
 
+.bodyText img{
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+}
+
 #pubPost4,
 #upPost4,
 #pubPost5,
@@ -721,7 +725,7 @@ header {
     border-radius: 4px;
     font-size: 1.1em;
     padding: 7px;
-    color:rgb(93, 93, 93);
+    color: rgb(93, 93, 93);
 }
 
 .fullNameInput:focus,
@@ -747,7 +751,7 @@ header {
     padding: 7px;
     height: 200px;
     resize: none;
-    color:rgb(93, 93, 93);
+    color: rgb(93, 93, 93);
 }
 
 .darkModeMsg {
@@ -775,36 +779,95 @@ header {
     font-family: HelveticaNeue;
 }
 
-.notice{
-    font-size:0.7em;
+.notice {
+    font-size: 0.7em;
     font-family: HelveticaNeue;
 }
 
-.bodyText a{
+.bodyText a {
     text-decoration: underline;
 }
-.lyrics{
+
+.lyrics {
     padding: 20px 0;
-    text-align:center;
+    text-align: center;
     font-size: 0.9em;
 }
 
-audio{
-    border-radius:50px;
+audio {
+    border-radius: 50px;
     display: table;
     margin: 0 auto;
     -webkit-margin: 0 auto;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
 }
-.audioDescription{
+
+.audioDescription {
     text-align: center;
-    font-size:0.6em;
+    font-size: 0.6em;
 }
-.pabloAlbumArt{
-    width:60%;
-    float:right;
-    padding:10px;
+
+.pabloAlbumArt {
+    width: 60%;
+    float: right;
+    padding: 10px;
 }
+
+.subHeadings {
+    font-family: ProductSansRegular;
+    font-size: 1.5em;
+}
+
+.subsubHeadings {
+    font-family: ProductSansRegular;
+    font-size: 1.25em;
+}
+
+.subText{
+    margin-left:30px;
+}
+
+.blogTable {
+    border-radius: 4px;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+}
+
+.blogTable tr:nth-child(even) {
+    background: #ffffff;
+}
+
+.blogTable tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.blogTable tr:hover {
+    background-color: #eeeeee;
+}
+
+.codeBlock{
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    padding:15px;
+    background-color: #eee;
+}
+
+.blogTable td{
+    padding:7px 10px;
+}
+
+.blogTable a{
+    text-decoration: none;
+}
+
+.blogTableHeader {
+    font-family: ProductSansRegular;
+    color: white;
+    background-color: #292929;
+}
+
 /*iPad*/
 
 @media only screen and (min-width: 768px) {

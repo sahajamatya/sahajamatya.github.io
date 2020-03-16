@@ -1,0 +1,427 @@
+<html>
+
+<head>
+    <title>Project Picasso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="Sahaj Amatya" />
+    <meta property="og:title" content="Dissecting The Life of Pablo, Pt. 1: Kanye West – Famous" />
+    <meta property="og:description"
+        content="In this blog, I present my analysis for Kanye West's song - Famous (TLOP, 2016)" />
+    <meta property="og:image" content="https://sahajamatya.github.io/img/pablo.jpg">
+    <meta property="og:url" content="https://sahajamatya.github.io/posts/20190729pablo.html">
+    <meta property="og:type" content="blog" />
+
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<script>
+    $(document).ready(function () {
+        $(".darkModeMsg").hide();
+        $(".slider").click(function () {
+            $(".darkModeMsg").show(500);
+            setTimeout(function () {
+                $(".darkModeMsg").hide(500);
+            }, 2000);
+        });
+    });
+</script>
+
+<body>
+    <header class="navbar">
+        <a href="../index.html" title="sahajamatya.com" class="homeLink">@sahajamatya</a>
+        <div class="darkModeSec">
+            <img src="../img/darkmode.png" height=16 style="padding-right:5px;" />
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="darkModeMsg">
+            <p>Feature coming soon.</p>
+        </div>
+    </header>
+    <br>
+    <div class="bodyElement" id="picassoBody">
+        <span class="header">Project Picasso</span><br>
+        <span class="underline">Published on January 03, 2020 by <a href="../about.html">Sahaj Amatya</a></span><br>
+        <table>
+            <tr valign="center">
+                <td>
+                    <a href="../about.html"><img src="../img/headshot.jpg" alt="Sahaj Amatya" width=50 length=50
+                            style="border-radius:50%;"></a>
+                </td>
+                <td>&nbsp;
+                    <a href="https://twitter.com/sahaj_amatya" style="color:black;"><i
+                            class="fa fa-twitter"></i></a>&nbsp;
+                    <a href="https://instagram.com/sahajamatya" style="color:black;"><i
+                            class="fa fa-instagram"></i></a>&nbsp;
+                    <a href="../img/social/snapcode.png" style="color:black;"><i class="fa fa-snapchat"></i></a>&nbsp;
+                    <a href="https://www.linkedin.com/in/sahajamatya" style="color:black;"><i
+                            class="fa fa-linkedin"></i></a>&nbsp;
+                    <a href="https://github.com/sahajamatya" style="color:black;"><i class="fa fa-github"></i></a>&nbsp;
+                </td>
+            </tr>
+        </table>
+        <div class="bodyText">
+            <p>
+                Picasso is a personal plotter I built over the first half of my 2019 winter break that operates on the
+                principle of Computer Numerical Control (CNC). It functions on three axes, with two NEMA 17 stepper
+                motors controlling the X and Y axes to navigate the writing apparatus across the designated writing
+                surface and an SG90 Micro Servo Motor allocated to control the Z axis serving to dictate the up and down
+                motions of the writing apparatus. The digital inputs were distributed using an Arduino Uno paired with a
+                CNC Shield. I used two A4988 drivers to manage the stepper motors for the X and Y axes.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t2eSa6Wmzbo" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                style="width:100%"></iframe>
+            <p>
+                Official Project Start Date: December 19, 2019<br>
+                Official Project End Date: January 01, 2020
+            </p>
+            <p class="subHeadings">Components Used</p>
+            <p>
+                <table class="blogTable">
+                    <tr style="font-family: ProductSansRegular;color: white;background-color: #292929;">
+                        <td style="color:white">Components</td>
+                        <td>Quantity</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://store.arduino.cc/usa/arduino-uno-rev3" target="_blank">Arduino Uno Rev3</a>
+                        </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://store.arduino.cc/usa/usb-2-0-cable-type-a-b" target="_blank">USB 2.0 Cable
+                                Type A/B</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B0793Q61Z9/ref=ppx_yo_dt_b_asin_title_o06_s01?ie=UTF8&psc=1"
+                                target="_blank">CNC Shield V3.0 + 4 A4900 Stepper Drivers</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B07KVJ84FS/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1"
+                                target="_blank">SG90 Micro Servo Motor</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/TMEZON-Power-Adapter-Supply-2-1mm/dp/B00Q2E5IXW/ref=sxin_2_ac_d_rm?ac_md=0-0-MTJ2IHBvd2VyIGFkYXB0ZXI%3D-ac_d_rm&cv_ct_cx=12v+power+adapter&keywords=12v+power+adapter&pd_rd_i=B00Q2E5IXW&pd_rd_r=86e5c53c-b753-4a2b-b7f0-3a728da0ef3b&pd_rd_w=LqnXD&pd_rd_wg=kjkcq&pf_rd_p=e2f20af2-9651-42af-9a45-89425d5bae34&pf_rd_r=7RQCJTDWCRVWFW79A3ER&psc=1&qid=1577982183"
+                                target="_blank">12V Power Adapter</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B07GD2BWPY/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1"
+                                target="_blank">120pc 10cm Jumper Wires</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B07LF898KN/ref=ppx_yo_dt_b_asin_title_o06_s01?ie=UTF8&psc=1"
+                                target="_blank">NEMA 17 Stepper Motor</a></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B0776KXY8G/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1"
+                                target="_blank">5m Toothed Timing Belt</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.amazon.com/gp/product/B07SYHCMYR/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1"
+                                target="_blank">400mm Linear Rail</a></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.homedepot.com/p/3-4-in-x-2-ft-x-2-ft-MDF-Project-Panel-205758/205922619"
+                                target="_blank">0.75"x2"x2" MDF Base Board</a></td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </p>
+
+            <p class="subHeadings">Concepts and Technologies Used</p>
+            <p>
+                <table class="blogTable">
+                    <tr style="font-family: ProductSansRegular;color: white;background-color: #292929;">
+                        <td style="color:white">Item</td>
+                        <td>Purpose</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Numerical_control" target="_blank">Computer Numerical
+                                Code (CNC)</a></td>
+                        <td>Primary principle</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm"
+                                target="_blank">Bresenham's Line Drawing Algorithm</a></td>
+                        <td>To draw a line on the XY Plane from point (x1, y1) to (x2,y2) while calibrating the axes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Xiaolin_Wu%27s_line_algorithm"
+                                target="_blank">Xiaolin Wu's Line Algorithm</a></td>
+                        <td>Same as above</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.onshape.com/" target="_blank">Onshape</a></td>
+                        <td>To model 3D parts</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://inkscape.org/" target="_blank">Inkscape</a></td>
+                        <td>To produce vector images to be drawn</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/G-code" target="_blank">G-code</a></td>
+                        <td>To manipulate the motors</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/grbl/grbl/wiki" target="_blank">GRBL</a></td>
+                        <td>To execute gcode files</td>
+                    </tr>
+                </table>
+            </p>
+            <p class="subHeadings">Assembly</p>
+            <p>
+                I decided to use an MDF board as the writing base because of its high density and smooth surface. I
+                bolted the X-axis linear rail on to the board and fixed a stepper motor to control motion in that axis
+                right next to it; I drilled 8 holes surrounding the footprint of the stepper motor so as it tie it in
+                tight with 8″ zip ties. I placed the motor above a Styrofoam cutout to reduce noise. The Y-axis rail was
+                mounted right on top of the X-axis slider using some welding glue. A 50mm wheel was attached to the
+                other end of the Y-Axis rail to keep it balanced and a wooden plank (0.5″x2″x17″) was glued on to the
+                MDF board right below the path of the wheel to keep the Y-axis rail perfectly level. I welded the Y-Axis
+                Stepper Motor on one end of the rail. I 3D printed parts to act as mount for the timing pulley to go on
+                opposite ends of each motor. I used Onshape as my CAD tool to design these parts.
+            </p>
+            <div>
+                <img src="../img/20200103picasso/x-axis-mount.png" style="width:50%;">
+                <img src="../img/20200103picasso/y-axis-mount.png" style="width:50%;">
+            </div>
+            <p>
+                The CNC Shield was mounted on top of the Arduino Uno, connections on the shield were made as follows
+                with the A4988 stepper drivers inserted on the X and Y axis ports:
+            </p>
+            <img src="../img/20200103picasso/shield.jpg" style="width:100%;">
+            <p>The pen holder was mounted on the Y axis slider [See Pic. (5)].</p>
+            <p>The Servo Motor was attached to the pen holder using welding glue. </p>
+            <p class="subHeadings">Calibrations</p>
+            <p>
+                In order to export G-code to this system, I used Grbl Controller v3.6. I calibrated the steps of the
+                motor to match real life measurements by running the following commands:
+            </p>
+            <div class="codeBlock">
+                <p>
+                    <code>
+                $100=15 //Motion on X-Axis set to 15 steps/mm<br>
+                $101=15 //Motion on Y-Axis set to 15 steps/mm<br>
+                $110=3000 //Max speed of X-Axis set to 3000 mm/sec<br>
+                $111=3000 //Max speed f Y-Axis set to 3000 mm/sec<br>
+                $120=1500 //Set acceleration for X-Axis to 1500mm/sq. sec<br>
+                $121=1500 //Set acceleration for Y-Axis to 1500mm/sq. sec<br>
+                </code>
+                </p>
+            </div>
+            <p class="subHeadings">Software Elements</p>
+            <p>
+                I used Inkscape v0.92.4 as my vector imaging tool. After finding the image I want, I trace the bitmap on
+                the canvas, and then use the custom <a href="https://github.com/fablabnbg/inkscape-centerline-trace"
+                    target="_blank">Inkscape Centerline Trace extension</a> to trace out a path to avoid
+                outlining which would form multiple layers. I then convert the thus obtained object to a path and export
+                the G-code for this image using the <a
+                    href="https://secureservercdn.net/198.71.233.106/k8u.855.myftpupload.com/wp-content/uploads/2019/08/MI-Inkscape-Extension.zip"
+                    target="_blank">MIGRBL extension</a>. MIGRBL differs from regular GRBL in that MIGRBL is
+                customized for CNC shields that have the X and Y axes connected to stepper motors with the Z axis
+                connected to a servo (CNC Shields are almost exclusively built for stepper motors only). For single line
+                fonts, I would recommend using the <a
+                    href="https://gitlab.com/oskay/hershey-text/tree/master/hershey-text" target="_blank">Hershey Text
+                    v3 extension</a> which should be included with the Inkscape
+                package from v1.0 and above.
+            </p>
+            <p class="subHeadings">Challenges</p>
+            <span class="subsubHeadings">Challenge #1: Designing Parts</span>
+            <div class="subText">
+                <p><u>#1.1: Designing Strong Enough Parts</u><br>
+                    Having no previous experience with either CAD or 3D printing, I was unaware of the limitations of 3D
+                    printing. After designing all the required parts, I learned that the 0.188″ cylindrical mounts for
+                    the pulleys would not be able to handle the stress generated by the tension of the timing belt. To
+                    counter this, I added in a fillet around the base of the cylinder to provide some extra support as
+                    recommended to me by Reddit user <a href="https://www.reddit.com/user/dirkin1"
+                        target="_blank">u/dirkin1</a>, which brings me to Challenge #1.2.
+                </p>
+                <p><u>#1.2: Finding a 3D Printing Service Provider</u><br>
+                    As I started this project during my winter break, the 3D printing service station provided by my
+                    university was out of operation. Third-party 3D printing services were charging astronomical sums
+                    for such small parts which did not fit the budget I allocated for this project. Thankfully, I was
+                    able to find a guy close to my city via the the subreddit <a
+                        href="https://www.reddit.com/r/3Dprintmything/" target="_blank">r/3Dprintmything</a> who did it
+                    for me at
+                    1/4th of the price third-party services were charging.
+                </p>
+                <p><u>#1.3: Designing the Pen Holder</u></p>
+                <img src="../img/20200103picasso/penIso.png" style="width:100%;">
+                <p class="audioDescription">Pic. (4): Isometric Projection of the Pen Holder’s Final Design</p>
+                <p>
+                    As stated before, having no previous experience with CAD, coming up with a design for the pen holder
+                    was a big challenge. I wanted to design something that was universal so that it could hold a writing
+                    apparatus possessing any girth. I came up with two different versions of the pen holder with the
+                    first one failing as it was too wobbly. When I had a final design, I was unable to have it move
+                    along the Z-Axis as originally intended. I came up with a workaround to counter this problem. I
+                    drilled a hole on the side of my pen, tied one end of a silver bead wire to the servo motor and the
+                    other end to the end of the pen’s refill tube through the hole. When the servo motor simulated a
+                    pen-down motion, rotating 90° to the left, it generated tension on the string which in turn pulled
+                    the refill tube down. The pen-up movement was simulated when the servo motor returned back to its
+                    initial position releasing all tension on the string.
+                </p>
+            </div>
+            <img src="../img/20200103picasso/servo.jpg" style="width:100%;">
+                <p class="audioDescription">Pic. (5): Servo Motor Placement</p>
+            <span class="subsubHeadings">Challenge #2: Adjusting the Tension on the Timing Belt</span>
+            <p>
+                To explain this hurdle, let us observe the setup of the Y-Axis. I noticed the writing apparatus was
+                missing a certain number of steps each time only when it was gliding through the negative Y
+                direction. I came to realize that this was caused because the pulley on the motor was positioned
+                slightly lower than the pulley on the 3D printed mount. This was a quick fix.
+            </p>
+            <span class="subsubHeadings">Challenge #3: New Territory</span>
+            <p>
+                Being a pure Computer Science major, electronics is a field that feels very familiar yet in reality
+                is tremendously different. I had never worked with Arduinos or PCBs before but comprehensive reading
+                on all of the components helped me overcome this challenge.
+            </p>
+            <p class="subHeadings">Things I Learned</p>
+            <p>
+                Things I learned working on this project with no prior engagement include:
+            </p>
+            <ul>
+                <li>Arduino programming</li>
+                <li>Programming motors</li>
+                <li>G-code</li>
+                <li>GRBL</li>
+                <li>CAD</li>
+                <li>Specifics of 3D printing</li>
+                <li>Machine assembly</li>
+                <li>Machine calibration</li>
+                <li>Vector based image manipulation</li>
+            </ul>
+            <p class="subHeadings">Possible Further Developments</p>
+            <p>
+                As I work through my Computer Science Degree, I’d like to keep on building on Picasso and add machine
+                learning capabilities to generate an acceptable bitmap image from any picture which can then be
+                converted into a sketch-able vector file.
+            </p>
+            <p class="subHeadings">What I Could've Done Better</p>
+            <p>
+                Using a <a
+                    href="https://www.amazon.com/Iverntech-Linear-Carriage-Printer-Machine/dp/B0762MPVN3/ref=sr_1_3?keywords=linear+rail&qid=1577999809&sr=8-3"
+                    target="_blank">flat linear rail</a> instead of the cylindrical one I purchased with my uninformed
+                opinion would
+                have immensely reduced the wobbliness I had to deal with while calibrating the Z-axis motion. I may
+                upgrade to it in the future.
+            </p>
+            <p class="subHeadings">Some Miscellaneous Images</p>
+            <p style="color:red">SOME MISC IMAGES GO HERE</p>
+            <p>
+                This project was an absolute pleasure and I would be lying if I didn’t say I enjoyed every second of it.
+                I would like to build a knock pattern sensing door lock for my next project. Until next time…
+            </p>
+            <hr>
+            <p class="notice">
+                I posted live updates on my private stories on my Instagram account <a href="https://www.instagram.com/sahajamatya/" target="_blank">@sahajamatya</a> for a couple dozen good
+                people which are now accessible through Highlights if you would like to check them out.
+            </p>
+        </div>
+
+    </div>
+    <a href="#picassoBody"><img src="../img/scrollup.png" class="scrollup" title="Scroll to Top" /></a>
+
+    <div class="footerContainer" id="footer">
+        <div class="upperLip">&nbsp;</div>
+        <div class="footerContent">
+            <div class="firstFooterComp">
+                <p class="footerHeading">Navigation</p>
+                <p><a href="../index.html">Home Page</a></p>
+                <p><a href="../allPosts.html">All posts</a></p>
+                <p><a href="../tiwltwa.html">Things I Would Like to Write About</a></p>
+                <p><a href="../about.html">About Me</a></p>
+                <p class="dropIdea">Drop an Idea &nbsp;<img src="../img/box.svg"
+                        style="width:15px; margin-bottom:-1.5px" /></p>
+                <div class="footerCopyright">
+
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="closeBtn"><img src="../img/close.png" width=20></span>
+                                <h2>Drop an Idea</h2>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <label>Name/Alias:</label><br><br>
+                                    <input type="text" id="fname" name="fname" class="fullNameInput"
+                                        placeholder="Optional" /><br><br>
+                                    <label>Idea:</label><br><br>
+                                    <textarea placeholder="" class="dropIdeaText"></textarea>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <span class="dropIdeaSub">
+                                    Submit
+                                </span>
+                                <span class="dropIdeaCancel">
+                                    Cancel
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var modal = document.getElementById('simpleModal');
+                        var modalBtn = document.getElementsByClassName('dropIdea')[0];
+                        var closeBtn = document.getElementsByClassName('closeBtn')[0];
+                        var cancelBtn = document.getElementsByClassName('dropIdeaCancel')[0];
+
+                        modalBtn.addEventListener('click', openModal);
+                        closeBtn.addEventListener('click', closeModal);
+                        window.addEventListener('click', clickOutside);
+                        cancelBtn.addEventListener('click', closeModal);
+                        function openModal() {
+                            modal.style.display = 'block';
+                        }
+
+                        function closeModal() {
+                            modal.style.display = 'none';
+                        }
+
+                        function clickOutside(e) {
+                            if (e.target == modal) {
+                                modal.style.display = 'none';
+                            }
+                        }
+                    </script>
+                    &copy; 2020, Sahaj Amatya
+                </div>
+            </div>
+            <div class="secondFooterComp">
+                <p class="footerHeading">Around the Web</p>
+                <p>
+                    <a href="https://twitter.com/sahaj_amatya" title="@sahaj_amatya"><img
+                            src="../img/social/twitter.png" class="footerSocial"></a>
+                    <a href="https://instagram.com/sahajamatya" title="@sahajamatya"><img
+                            src="../img/social/instagram.png" class="footerSocial"></a>
+                    <a href="img/social/snapcode.png" title="@sahajamatya"><img src="../img/social/snapchat.png"
+                            class="footerSocial"></a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/sahajamatya" title="linkedin.com/in/sahajamatya"><img
+                            src="../img/social/linkedin.png" class="footerSocial"></a>
+                    <a href="https://github.com/sahajamatya" title="github.com/sahajamatya"><img
+                            src="../img/social/github.png" class="footerSocial"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
