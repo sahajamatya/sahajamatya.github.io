@@ -12,25 +12,12 @@
     <meta property="og:url" content="https://sahajamatya.github.io/posts/20190729pablo.html">
     <meta property="og:type" content="blog" />
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" class="style">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<script>
-    $(document).ready(function () {
-        $(".darkModeMsg").hide();
-        $(".slider").click(function () {
-            $(".darkModeMsg").show(500);
-            setTimeout(function () {
-                $(".darkModeMsg").hide(500);
-            }, 2000);
-        });
-        $('img').click(function () {
-            window.open($(this)[0].src, '_blank')
-        });
-    });
-</script>
+<script type="text/javascript" src="../functions.js"></script>
 
 <body>
     <header class="navbar">
@@ -198,8 +185,8 @@
                 opposite ends of each motor. I used Onshape as my CAD tool to design these parts.
             </p>
             <div class="d3images">
-                <img src="../img/20200103picasso/x-axis-mount.png" style="width:48%;">
-                <img src="../img/20200103picasso/y-axis-mount.png" style="width:48%;">
+                <img src="../img/20200103picasso/x-axis-mount.png" style="width:48%;height:auto">
+                <img src="../img/20200103picasso/y-axis-mount.png" style="width:48%;height:auto">
             </div>
             <div class="d3imagesTitle">
                 <span class="audioDescription">Pic. (1): X Axis Pulley Mount</span>

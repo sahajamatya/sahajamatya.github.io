@@ -7,7 +7,7 @@
   <meta name="description" content="This website is a collection of my projects and my meditations.">
   <meta name="keywords" content="sahaj amatya, sahaj, amatya">
   <meta name="author" content="Sahaj Amatya">
-  <link rel="stylesheet" href="style.css" id="style">
+  <link rel="stylesheet" href="style.css" class="style">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -20,7 +20,7 @@
       <img src="img/darkmode.png" height=16 style="padding-right:5px;" />
       <label class="switch">
         <input type="checkbox">
-        <span class="slider round" id="darkMode"></span>
+        <span class="slider round" class="darkModeToggle"></span>
       </label>
     </div>
     <div class="darkModeMsg">
@@ -40,37 +40,8 @@
 
   <script type="text/javascript" src="js/particles.js"></script>
   <script type="text/javascript" src="js/particles.min.js"></script>
-  <script id="themeSelector" type="text/javascript"></script>
-  <script>
-    $(document).ready(function () {
-      $("#themeSelector").attr("src", "js/lightMode.js");
-      $(".upcomingPosts").hide();
-      $(".darkModeMsg").hide();
-      $(".pubPosts").click(function () {
-        $(".upPosts").css("opacity", "0.5");
-        $(".pubPosts").css("opacity", "1");
-        $(".upcomingPosts").hide();
-        $(".publishedPosts").fadeIn(500);
-      });
-      $(".upPosts").click(function () {
-        $(".pubPosts").css("opacity", "0.5");
-        $(".upPosts").css("opacity", "1");
-        $(".upcomingPosts").fadeIn(500);
-        $(".publishedPosts").hide();
-      });
-      $("#darkMode").click(function () {
-        // if ($("#style").attr("href") == "style.css") {
-        //   $("#style").attr("href", "darkMode.css");
-        // } else {
-        //   $("#style").attr("href", "style.css");  
-        // }
-        $(".darkModeMsg").show(500);
-        setTimeout(function () {
-          $(".darkModeMsg").hide(500);
-        }, 2000);
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/lightMode.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
 
 
   <div class="container" id="secondPage">
@@ -120,7 +91,7 @@
         </a>
       </div>
       <div class="innerContainer" id="pubPost3">
-        <a href="posts/20190729pablo.html" class="linkHead">
+        <a href="posts/20180523fdr.html" class="linkHead">
           On Science - The Endless Frontier
           <div class="description">
             <div class="textDesc">
