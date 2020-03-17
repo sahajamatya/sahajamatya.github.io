@@ -14,11 +14,11 @@ $(function() {
       $(".publishedPosts").hide();
     });
     $(".slider").click(function () {
-    //   if ($(".style").attr("href") == "style.css") {
-    //     $(".style").attr("href", "darkMode.css");
-    //   } else {
-    //     $(".style").attr("href", "style.css");  
-    //   }
+      // if ($(".style").attr("href") == "style.css") {
+      //   $(".style").attr("href", "darkMode.css");
+      // } else {
+      //   $(".style").attr("href", "style.css");  
+      // }
       $(".darkModeMsg").show(500);
       setTimeout(function () {
         $(".darkModeMsg").hide(500);
