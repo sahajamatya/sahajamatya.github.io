@@ -8,5 +8,5 @@ Sorts:
 ______________________________
 
 - Add comment box
-- Open social media links in new tabs (target="_blank")
-- xxx minute read
+- restructure bukowski roll the dice to include sticky image
+- sticky clap to the sides

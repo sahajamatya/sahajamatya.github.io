@@ -906,6 +906,70 @@ audio {
     border-radius: 4px;
 }
 
+.commentTextArea:focus {
+    outline: none;
+    border: 1px solid grey;
+}
+
+.commentTextArea {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    font-family: Avenir;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 0.8em;
+    padding: 7px;
+    margin-top: 30px;
+    height: 100px;
+    resize: none;
+}
+
+.commentButtons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.commentSub {
+    border-radius: 4px;
+    font-size: 0.9em;
+    padding: 5px 5px;
+    margin-right: 10px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    background-color: black;
+    border: 1px solid black;
+    font-family: HelveticaNeue;
+    color: white;
+}
+
+.commentSub:hover{
+    background-color: #306754;
+    border: 1px solid #306754;
+    color: white;
+    cursor:pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.commentCancel:hover{
+    cursor:pointer;
+}
+
+.commentCancel {
+    border-radius: 4px;
+    font-size: 0.9em;
+    padding: 5px 5px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-family: HelveticaNeue;
+}
 
 /*iPad*/
 
