@@ -7,6 +7,4 @@ Sorts:
 
 ______________________________
 
-- Add comment box
-- restructure bukowski roll the dice to include sticky image
 - sticky clap to the sides
