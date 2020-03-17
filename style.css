@@ -971,10 +971,19 @@ audio {
     font-family: HelveticaNeue;
 }
 
+.bukowskiImage{
+    display: none;
+}
+
+.bukowskiBox{
+    width:92%;
+    margin:0 auto;
+}
+
 /*iPad*/
 
 @media only screen and (min-width: 768px) {
-    Ï .bodyElement {
+    .bodyElement {
         width: 66%;
         margin: 0 auto;
     }
@@ -1150,6 +1159,10 @@ audio {
     .tiwltwaBody {
         width: 80%;
     }
+    .bukowskiBox{
+        width:66%;
+        margin:0 auto;
+    }
 }
 
 /*iPad Pro*/
@@ -1236,12 +1249,18 @@ audio {
         color: black;
         border-radius: 4px;
     }
+
+    .bukowskiBox{
+        width:75%;
+        margin:0 auto;
+    }
+    
 }
 
 
 /*Laptops/Monitors*/
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     .bodyElement {
         width: 40%;
         margin: 0 auto;
@@ -1419,8 +1438,24 @@ audio {
         width: 400px;
         position: sticky;
         position: -webkit-sticky;
-        top: 300px;
-        margin-left: 400px;
+        top: 220px;
+        margin-bottom:100px;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    }
+
+    .compartment{
+        display: flex;
+        flex-direction: row;
+        width:50%;
+        margin-left:30%;
+    }
+
+    .commentBox{
+        width:50%;
+        margin-left:30%;
+    }
+
+    #bukowskiBody{
+        width:60%;
     }
 }
