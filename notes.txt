@@ -4,3 +4,9 @@ Sorts:
 - By Date (Oldest To Newest)
 ---- Sort By Month
 - Give me a random blog
+
+______________________________
+
+- Add comment box
+- Open social media links in new tabs (target="_blank")
+- xxx minute read
