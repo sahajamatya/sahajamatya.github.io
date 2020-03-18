@@ -15,23 +15,27 @@ $(function () {
   });
   var mode = "light";
   $(".slider").click(function () {
-    // if ($(".style").attr("href") == "style.css" || mode == "dark") {
-    //   mode = "dark";
-    //   $(".style").attr("href", "darkMode.css");
-    //   $("a").each(function () {
-    //     var $this = $(this);
-    //     var _href = $this.attr("href");
-    //     $this.attr("href", _href + '?mode=' + mode);
-    //   });
-    // } else {
-    //   mode = "light";
-    //   $(".style").attr("href", "style.css");
-    //   $("a").each(function () {
-    //     var $this = $(this);
-    //     var _href = $this.attr("href");
-    //     $this.attr("href", _href + '?mode=' + mode);
-    //   });
-    // }
+    if ($(".style").attr("href") == "style.css") {
+      mode = "dark";
+      $(".style").attr("href", "darkMode.css");
+      $(".modeIcon").attr("src","img/lightMode.png");
+      $(".scrollup").attr("src","img/scrollupLight.png");
+      $("a").each(function () {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        $this.attr("href", _href + '?mode=' + mode);
+      });
+    } else {
+      mode = "light";
+      $(".style").attr("href", "style.css");
+      $(".modeIcon").attr("src","img/darkMode.png");
+      $(".scrollup").attr("src","img/scrollup.png");
+      $("a").each(function () {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        $this.attr("href", _href + '?mode=' + mode);
+      });
+    }
 
     $(".darkModeMsg").show(500);
     setTimeout(function () {
