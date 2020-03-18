@@ -294,6 +294,16 @@ span i {
     text-overflow: ellipsis;
 }
 
+.postHeader{
+    display: block;
+    display: -webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .imgBox {
     width: 100.5px;
     height: 100.5px;
