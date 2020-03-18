@@ -18,18 +18,39 @@
 </head>
 
 <script>
-    $(document).ready(function () {
-        $(".darkModeMsg").hide();
-        $(".slider").click(function () {
-            $(".darkModeMsg").show(500);
-            setTimeout(function () {
-                $(".darkModeMsg").hide(500);
-            }, 2000);
-        });
-        $('.openNew').click(function () {
-            window.open($(this)[0].src, '_blank');
-        });
+$(document).ready(function () {
+    // var urlMode = new URLSearchParams(window.location.search);
+    // var mode = urlMode.toString();
+    // console.log(mode);
+    // $(".darkModeMsg").hide();
+    // if (mode === "mode=dark") {
+    //   $(".style").attr("href", "../darkMode.css");
+    //   console.log("Also, the style sheet is: " + $(".style").attr("href"));
+    //   $("a").each(function () {
+    //     var $this = $(this);
+    //     var _href = $this.attr("href");
+    //     $this.attr("href", _href + '?mode=' + mode);
+    //   });
+    // } else {
+    //   mode = "light";
+    //   $(".style").attr("href", "../style.css");
+    //   $("a").each(function () {
+    //     var $this = $(this);
+    //     var _href = $this.attr("href");
+    //     $this.attr("href", _href + '?mode=' + mode);
+    //   });
+    // }
+    $(".darkModeMsg").hide();
+    $(".slider").click(function () {
+        $(".darkModeMsg").show(500);
+        setTimeout(function () {
+            $(".darkModeMsg").hide(500);
+        }, 2000);
     });
+    $('.openNew').click(function () {
+        window.open($(this)[0].src, '_blank');
+    });
+});
 </script>
 
 <body>
