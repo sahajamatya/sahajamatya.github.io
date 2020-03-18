@@ -18,7 +18,7 @@ $(function () {
     if ($(".style").attr("href") == "style.css") {
       mode = "dark";
       $(".style").attr("href", "darkMode.css");
-      $(".modeIcon").attr("src","img/lightMode.png");
+      $(".modeIcon").attr("src","img/lightmode.png");
       $(".scrollup").attr("src","img/scrollupLight.png");
       $("a").each(function () {
         var $this = $(this);
@@ -28,7 +28,7 @@ $(function () {
     } else {
       mode = "light";
       $(".style").attr("href", "style.css");
-      $(".modeIcon").attr("src","img/darkMode.png");
+      $(".modeIcon").attr("src","img/darkmode.png");
       $(".scrollup").attr("src","img/scrollup.png");
       $("a").each(function () {
         var $this = $(this);
