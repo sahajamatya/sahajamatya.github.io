@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../style.css" class="style">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 </head>
 <!-- 
     Dark: ciHvhtdD
@@ -22,56 +23,56 @@
  -->
 <script>
     $(document).ready(function () {
-        var urlMode = new URLSearchParams(window.location.search);
-        var mode = urlMode.toString();
-        $(".darkModeMsg").hide();
-        // console.log("The mode is: "+mode);
-        if (mode.indexOf("ciHvhtdD=") != -1) {
-            $('.darkModeSelector').prop('checked', true);
-            $(".style").attr("href", "../darkMode.css");
-            //console.log("Also, the style sheet is: " + $(".style").attr("href"));
-            $("a").each(function () {
-                var $this = $(this);
-                var _href = $this.attr("href");
-                var indexOfQ = _href.indexOf("?");
-                _href = _href.substr(0, indexOfQ);
-                $this.attr("href", _href + '?' + mode);
-            });
-        } else {
-            mode = "yFpKKwpf";
-            $(".style").attr("href", "../style.css");
-            $("a").each(function () {
-                var $this = $(this);
-                var _href = $this.attr("href");
-                var indexOfQ = _href.indexOf("?");
-                _href = _href.substr(0, indexOfQ);
-                $this.attr("href", _href + '?' + mode);
-            });
-        }
+        // var urlMode = new URLSearchParams(window.location.search);
+        // var mode = urlMode.toString();
+        // $(".darkModeMsg").hide();
+        // // console.log("The mode is: "+mode);
+        // if (mode.indexOf("ciHvhtdD=") != -1) {
+        //     $('.darkModeSelector').prop('checked', true);
+        //     $(".style").attr("href", "../darkMode.css");
+        //     //console.log("Also, the style sheet is: " + $(".style").attr("href"));
+        //     $("a").each(function () {
+        //         var $this = $(this);
+        //         var _href = $this.attr("href");
+        //         var indexOfQ = _href.indexOf("?");
+        //         _href = _href.substr(0, indexOfQ);
+        //         $this.attr("href", _href + '?' + mode);
+        //     });
+        // } else {
+        //     mode = "yFpKKwpf";
+        //     $(".style").attr("href", "../style.css");
+        //     $("a").each(function () {
+        //         var $this = $(this);
+        //         var _href = $this.attr("href");
+        //         var indexOfQ = _href.indexOf("?");
+        //         _href = _href.substr(0, indexOfQ);
+        //         $this.attr("href", _href + '?' + mode);
+        //     });
+        // }
         $(".darkModeMsg").hide();
         $(".darkModeSelector").on("change", function () {
-            var is_it_checked = $(this).prop("checked");
-            if (is_it_checked == true) {
-                mode = "ciHvhtdD";
-                $(".style").attr("href", "../darkMode.css");
-                $(".modeIcon").attr("src", "../img/lightmode.png");
-                $(".scrollup").attr("src", "../img/scrollupLight.png");
-                $("a").each(function () {
-                    var $this = $(this);
-                    var _href = $this.attr("href");
-                    $this.attr("href", _href + '?' + mode);
-                });
-            } else {
-                mode = "yFpKKwpf";
-                $(".style").attr("href", "../style.css");
-                $(".modeIcon").attr("src", "../img/darkmode.png");
-                $(".scrollup").attr("src", "../img/scrollup.png");
-                $("a").each(function () {
-                    var $this = $(this);
-                    var _href = $this.attr("href");
-                    $this.attr("href", _href + '?' + mode);
-                });
-            }
+            // var is_it_checked = $(this).prop("checked");
+            // if (is_it_checked == true) {
+            //     mode = "ciHvhtdD";
+            //     $(".style").attr("href", "../darkMode.css");
+            //     $(".modeIcon").attr("src", "../img/lightmode.png");
+            //     $(".scrollup").attr("src", "../img/scrollupLight.png");
+            //     $("a").each(function () {
+            //         var $this = $(this);
+            //         var _href = $this.attr("href");
+            //         $this.attr("href", _href + '?' + mode);
+            //     });
+            // } else {
+            //     mode = "yFpKKwpf";
+            //     $(".style").attr("href", "../style.css");
+            //     $(".modeIcon").attr("src", "../img/darkmode.png");
+            //     $(".scrollup").attr("src", "../img/scrollup.png");
+            //     $("a").each(function () {
+            //         var $this = $(this);
+            //         var _href = $this.attr("href");
+            //         $this.attr("href", _href + '?' + mode);
+            //     });
+            // }
             $(".darkModeMsg").show(500);
             setTimeout(function () {
                 $(".darkModeMsg").hide(500);
