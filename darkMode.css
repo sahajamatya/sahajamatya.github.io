@@ -45,7 +45,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #121212;
+    background-color: #1e1e1e;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 }
 
 .navBar{
-    background-color: #121212;
+    background-color: #1e1e1e;
     color:white;
 }
 
@@ -163,9 +163,9 @@ input:checked+.slider:before {
 }
 
 .containerHeader {
-    -moz-box-shadow: inset 0 -6px 10px -10px #1f1f1f;
-    -webkit-box-shadow: inset 0 -6px 10px -10px #1f1f1f;
-    box-shadow: inset 0 -6px 10px -10px black;
+    -moz-box-shadow: inset 0 -6px 10px -10px #131313;
+    -webkit-box-shadow: inset 0 -6px 10px -10px #131313;
+    box-shadow: inset 0 -6px 10px -10px #131313;
     height: 40px;
     width: 100%;
 }
@@ -189,7 +189,7 @@ input:checked+.slider:before {
     content: " ";
     height: 30px;
     width: 70px;
-    background-color: #121212;
+    background-color: #1e1e1e;
     position: absolute;
     top: -5px;
 }
@@ -198,7 +198,7 @@ input:checked+.slider:before {
     display: inline-block;
     right: -3px;
     transform: skew(40deg, 0deg);
-    box-shadow: 2px -2px 2px #000000;
+    box-shadow: 2px -2px 2px 2px #131313;
     z-index: -1;
     border-radius: 0 6px 0 0;
 }
@@ -208,12 +208,12 @@ input:checked+.slider:before {
     left: 25px;
     z-index: -1;
     transform: skew(-40deg, 0deg);
-    box-shadow: -2px -2px 2px #000000;
+    box-shadow: -2px -2px 2px 2px #131313;
     border-radius: 6px 0 0 0;
 }
 
 span i {
-    background-color: #121212;
+    background-color: #1e1e1e;
     font-style: normal;
     padding-bottom: 6px;
     margin-left: 19px;
@@ -244,13 +244,19 @@ span i {
     color: white;
     font-size: 1.2em;
     flex: 1;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 
+    0 1px 10px rgba(0, 0, 0, 0.034), 
+    0 1px 10px rgba(0, 0, 0, 0.048), 
+    0 1px 10px rgba(0, 0, 0, 0.06), 
+    0 1px 10px rgba(0, 0, 0, 0.072), 
+    0 1px 10px rgba(0, 0, 0, 0.086), 
+    0 1px 10px rgba(0, 0, 0, 0.12);
     -webkit-transition: 0.1s ease-in-out;
     -moz-transition: 0.1s ease-in-out;
     -o-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
     position: relative;
-    background-color: #1f1f1f;
+    background-color: #232323;
 }
 
 .innerContainer:hover {

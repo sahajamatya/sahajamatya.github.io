@@ -13,27 +13,77 @@ $(function () {
     $(".upcomingPosts").fadeIn(500);
     $(".publishedPosts").hide();
   });
-  var mode = "light";
-  $(".slider").click(function () {
-    if ($(".style").attr("href") == "style.css") {
-      mode = "dark";
-      $(".style").attr("href", "darkMode.css");
-      $(".modeIcon").attr("src","img/lightmode.png");
-      $(".scrollup").attr("src","img/scrollupLight.png");
+  var urlMode = new URLSearchParams(window.location.search);
+  var mode = urlMode.toString();
+  if (mode != "") {
+    $(".darkModeMsg").hide();
+    // console.log("The mode is: "+mode);
+    if (mode.indexOf("ciHvhtdD=")!=-1) {
+      $('.darkModeSelector').prop('checked', true);
+      $(".style").attr("href", "../darkMode.css");
+      //console.log("Also, the style sheet is: " + $(".style").attr("href"));
       $("a").each(function () {
         var $this = $(this);
         var _href = $this.attr("href");
-        $this.attr("href", _href + '?mode=' + mode);
+        $this.attr("href", _href + '?' + mode);
       });
     } else {
-      mode = "light";
-      $(".style").attr("href", "style.css");
-      $(".modeIcon").attr("src","img/darkmode.png");
-      $(".scrollup").attr("src","img/scrollup.png");
+      mode = "yFpKKwpf";
+      $(".style").attr("href", "../style.css");
       $("a").each(function () {
         var $this = $(this);
         var _href = $this.attr("href");
-        $this.attr("href", _href + '?mode=' + mode);
+        $this.attr("href", _href + '?' + mode);
+      });
+    }
+  }
+  var is_it_checked = $(".darkModeSelector").prop("checked");
+    if (is_it_checked==true) {
+      mode = "ciHvhtdD";
+      $(".style").attr("href", "darkMode.css");
+      $(".modeIcon").attr("src", "img/lightmode.png");
+      $(".scrollup").attr("src", "img/scrollupLight.png");
+      $("a").each(function () {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        $this.attr("href", _href + '?' + mode);
+      });
+    } else {
+      mode = "yFpKKwpf";
+      $(".style").attr("href", "style.css");
+      $(".modeIcon").attr("src", "img/darkmode.png");
+      $(".scrollup").attr("src", "img/scrollup.png");
+      $("a").each(function () {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        $this.attr("href", _href + '?' + mode);
+      });
+    }
+  $(".darkModeSelector").on("change",function () {
+    var is_it_checked = $(this).prop("checked");
+    if (is_it_checked==true) {
+      mode = "ciHvhtdD";
+      $(".style").attr("href", "darkMode.css");
+      $(".modeIcon").attr("src", "img/lightmode.png");
+      $(".scrollup").attr("src", "img/scrollupLight.png");
+      $("a").each(function () {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        var indexOfQ = _href.indexOf("?");
+        _href=_href.substr(0,indexOfQ);
+        $this.attr("href", _href + '?' + mode);
+      });
+    } else {
+      mode = "yFpKKwpf";
+      $(".style").attr("href", "style.css");
+      $(".modeIcon").attr("src", "img/darkmode.png");
+      $(".scrollup").attr("src", "img/scrollup.png");
+      $("a").each(function () {
+        var $this = $(this);
+        var _href = $this.attr("href");
+        var indexOfQ = _href.indexOf("?");
+        _href=_href.substr(0,indexOfQ);
+        $this.attr("href", _href + '?' + mode);
       });
     }
 
