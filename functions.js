@@ -13,4 +13,7 @@ $(function () {
     $(".upcomingPosts").fadeIn(500);
     $(".publishedPosts").hide();
   });
+  $('.openNew').click(function () {
+    window.open($(this)[0].src, '_blank');
+  });
 });
