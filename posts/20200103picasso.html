@@ -15,70 +15,11 @@
     <link rel="stylesheet" href="../style.css" class="style">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="../viewModeSub1.js"></script>
 </head>
-<!-- 
-    Dark: ciHvhtdD
-    Light: yFpKKwpf
- -->
+
 <script>
     $(document).ready(function () {
-        // var urlMode = new URLSearchParams(window.location.search);
-        // var mode = urlMode.toString();
-        // $(".darkModeMsg").hide();
-        // // console.log("The mode is: "+mode);
-        // if (mode.indexOf("ciHvhtdD=") != -1) {
-        //     $('.darkModeSelector').prop('checked', true);
-        //     $(".style").attr("href", "../darkMode.css");
-        //     //console.log("Also, the style sheet is: " + $(".style").attr("href"));
-        //     $("a").each(function () {
-        //         var $this = $(this);
-        //         var _href = $this.attr("href");
-        //         var indexOfQ = _href.indexOf("?");
-        //         _href = _href.substr(0, indexOfQ);
-        //         $this.attr("href", _href + '?' + mode);
-        //     });
-        // } else {
-        //     mode = "yFpKKwpf";
-        //     $(".style").attr("href", "../style.css");
-        //     $("a").each(function () {
-        //         var $this = $(this);
-        //         var _href = $this.attr("href");
-        //         var indexOfQ = _href.indexOf("?");
-        //         _href = _href.substr(0, indexOfQ);
-        //         $this.attr("href", _href + '?' + mode);
-        //     });
-        // }
-        $(".darkModeMsg").hide();
-        $(".darkModeSelector").on("change", function () {
-            // var is_it_checked = $(this).prop("checked");
-            // if (is_it_checked == true) {
-            //     mode = "ciHvhtdD";
-            //     $(".style").attr("href", "../darkMode.css");
-            //     $(".modeIcon").attr("src", "../img/lightmode.png");
-            //     $(".scrollup").attr("src", "../img/scrollupLight.png");
-            //     $("a").each(function () {
-            //         var $this = $(this);
-            //         var _href = $this.attr("href");
-            //         $this.attr("href", _href + '?' + mode);
-            //     });
-            // } else {
-            //     mode = "yFpKKwpf";
-            //     $(".style").attr("href", "../style.css");
-            //     $(".modeIcon").attr("src", "../img/darkmode.png");
-            //     $(".scrollup").attr("src", "../img/scrollup.png");
-            //     $("a").each(function () {
-            //         var $this = $(this);
-            //         var _href = $this.attr("href");
-            //         $this.attr("href", _href + '?' + mode);
-            //     });
-            // }
-            $(".darkModeMsg").show(500);
-            setTimeout(function () {
-                $(".darkModeMsg").hide(500);
-            }, 2000);
-        });
-
         $('.openNew').click(function () {
             window.open($(this)[0].src, '_blank');
         });
@@ -89,14 +30,11 @@
     <header class="navbar">
         <a href="../index.html" title="sahajamatya.com" class="homeLink">@sahajamatya</a>
         <div class="darkModeSec">
-            <img src="../img/darkmode.png" height=16 style="padding-right:5px;" />
+            <img src="../img/darkmode.png" height=16 style="padding-right:5px;" class="modeIcon"/>
             <label class="switch">
                 <input type="checkbox" class="darkModeSelector">
                 <span class="slider round"></span>
             </label>
-        </div>
-        <div class="darkModeMsg">
-            <p>Feature coming soon.</p>
         </div>
     </header>
     <br>
@@ -110,16 +48,16 @@
                             length=50 style="border-radius:50%;"></a>
                 </td>
                 <td>&nbsp;
-                    <a href="https://twitter.com/sahaj_amatya" style="color:black;" target="_blank"><i
-                            class="fa fa-twitter"></i></a>&nbsp;
-                    <a href="https://instagram.com/sahajamatya" style="color:black;" target="_blank"><i
-                            class="fa fa-instagram"></i></a>&nbsp;
-                    <a href="../img/social/snapcode.png" style="color:black;" target="_blank"><i
-                            class="fa fa-snapchat"></i></a>&nbsp;
-                    <a href="https://www.linkedin.com/in/sahajamatya" style="color:black;"><i
-                            class="fa fa-linkedin"></i></a>&nbsp;
-                    <a href="https://github.com/sahajamatya" style="color:black;" target="_blank"><i
-                            class="fa fa-github"></i></a>&nbsp;
+                    <a href="https://twitter.com/sahaj_amatya" target="_blank"><i
+                            class="fa fa-twitter icons"></i></a>&nbsp;
+                    <a href="https://instagram.com/sahajamatya" target="_blank"><i
+                            class="fa fa-instagram icons"></i></a>&nbsp;
+                    <a href="../img/social/snapcode.png" target="_blank"><i
+                            class="fa fa-snapchat icons"></i></a>&nbsp;
+                    <a href="https://www.linkedin.com/in/sahajamatya"><i
+                            class="fa fa-linkedin icons"></i></a>&nbsp;
+                    <a href="https://github.com/sahajamatya" target="_blank"><i
+                            class="fa fa-github icons"></i></a>&nbsp;
                 </td>
             </tr>
         </table>
@@ -413,7 +351,7 @@
         </div>
 
     </div>
-    <a href="#picassoBody"><img src="../img/scrollup.png" class="scrollup" title="Scroll to Top" /></a>
+    <a href="#picassoBody"><img src="../img/scrollup.png" class="scrollup modeIcon" title="Scroll to Top" /></a>
 
     <div class="footerContainer" id="footer">
         <div class="upperLip">&nbsp;</div>

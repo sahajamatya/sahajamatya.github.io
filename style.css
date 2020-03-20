@@ -53,6 +53,7 @@ body {
     height: 85vh;
 }
 
+
 header {
     position: fixed;
     width: 100%;
@@ -74,6 +75,13 @@ header a {
     bottom: 30%;
 }
 
+.modeIcon{
+    content: url('img/darkmode.png');
+}
+
+.icons{
+    color:black;
+}
 .switch {
     position: absolute;
     top: -3px;
