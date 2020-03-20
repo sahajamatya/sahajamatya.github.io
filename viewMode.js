@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    $(window).on('popstate', function() {
-        location.reload(true);
-        console.log("reloaded");
-     });
     var view = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({ accumulator, [key.trim()]: decodeURIComponent(value) }), {});
     
     function adjustIcons() {
