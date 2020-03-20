@@ -12,10 +12,10 @@ $(document).ready(function () {
             if (imgPath.indexOf(suffix) == -1) {
                 var imgPathDark = filename + suffix;
                 $this.attr("src", imgPathDark);
-                console.log(imgPathDark);
             } 
         });
     }
+    
     function darkMode() {
         $(".darkModeSelector").prop("checked", true);
         $(".style").attr("href", "darkMode.css");
