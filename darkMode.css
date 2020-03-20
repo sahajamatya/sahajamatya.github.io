@@ -516,7 +516,7 @@ span i {
 
 .dropIdea {
     color: black;
-    background: white;
+    background-color: white;
     border-radius: 6px;
     width: 91px;
     padding: 8px;
@@ -927,7 +927,7 @@ audio {
 .quotation {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
     padding: 15px;
-    background-color: #eee;
+    background-color: #232323;
     font-size: 0.8em;
     border-radius: 4px;
 }
