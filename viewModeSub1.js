@@ -3,34 +3,22 @@ $(document).ready(function () {
     var cookie = document.cookie;
     var i = cookie.indexOf("mode=");
     var mode = cookie.charAt(i+5);
-    function adjustIcons() {
-        $(".modeIcon").each(function () {
-            var $this = $(this);
-            var imgPath = $this.attr("src");
-            var chunk = imgPath.split(".");
-            var extension = chunk[chunk.length - 1];
-            var filename = imgPath.replace("." + extension, "");
-            var suffix = "dark." + extension;
-            if (imgPath.indexOf(suffix) == -1) {
-                var imgPathDark = filename + suffix;
-                $this.attr("src", imgPathDark);
-            } 
-        });
-    }
     
     function darkMode(){
         $(".darkModeSelector").prop("checked", true);
         $(".style").attr("href", "../darkMode.css");
-        adjustIcons();
+        $(".modeIcon").attr("src", "../img/darkmodedark.png");
+        $(".scrollup").attr("src", "../img/scrollupdark.png");
     }
     function lightMode(){
         $(".darkModeSelector").prop("checked", false);
         $(".style").attr("href", "../style.css");
-        adjustIcons();
+        $(".modeIcon").attr("src", "../img/darkmode.png");
+        $(".scrollup").attr("src", "../img/scrollup.png");
     }
     if (mode == 'd') {
         darkMode();
-    } else if(mode=='l'){
+    } else {
         lightMode();
     }
     $(".darkModeSelector").on("change", function () {

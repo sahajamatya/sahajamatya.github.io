@@ -60,7 +60,6 @@ body {
     color: white;
 }
 
-
 header {
     position: fixed;
     width: 100%;
@@ -542,7 +541,7 @@ span i {
 }
 
 .bodyElement a {
-    color: #222;
+    color: white;
     text-decoration: none;
 }
 
