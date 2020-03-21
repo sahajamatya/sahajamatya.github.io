@@ -1,6 +1,8 @@
 $(document).ready(function () {
-    var view = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({ accumulator, [key.trim()]: decodeURIComponent(value) }), {});
-    
+    //var view = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({ accumulator, [key.trim()]: decodeURIComponent(value) }), {});
+    var cookie = document.cookie;
+    var i = cookie.indexOf("mode=");
+    var mode = cookie.charAt(i+5);
     function adjustIcons() {
         $(".modeIcon").each(function () {
             var $this = $(this);
@@ -26,18 +28,18 @@ $(document).ready(function () {
         $(".style").attr("href", "../style.css");
         adjustIcons();
     }
-    if (view.mode == "dark") {
+    if (mode == 'd') {
         darkMode();
-    } else {
+    } else if(mode=='l'){
         lightMode();
     }
     $(".darkModeSelector").on("change", function () {
         var is_it_checked = $(this).prop("checked");
         if (is_it_checked == true) {
-            document.cookie="mode=dark;path=/";
+            document.cookie="mode=d;path=/";
             darkMode();
         } else {
-            document.cookie="mode=light;path=/";
+            document.cookie="mode=l;path=/";
             lightMode();
         }
         console.log($(".style").attr("href"));
