@@ -999,6 +999,26 @@ audio {
     margin:0 auto;
 }
 
+.seeAllText{
+    font-family: ProductSansRegular;
+}
+
+.seeall{
+    padding: 10px 10px;
+    border-radius:4px;
+    position:absolute;
+    right:4%;
+    color: black
+}
+
+.seeall:hover{
+    background-color: rgb(219, 219, 219);
+    transition:1.5s ease;
+    cursor:pointer;
+}
+
+
+
 /*iPad*/
 
 @media only screen and (min-width: 768px) {
@@ -1182,6 +1202,12 @@ audio {
         width:66%;
         margin:0 auto;
     }
+    .seeall{
+        padding: 10px 10px;
+        border-radius:4px;
+        position:absolute;
+        right:6%;
+    }
 }
 
 /*iPad Pro*/
@@ -1273,7 +1299,12 @@ audio {
         width:75%;
         margin:0 auto;
     }
-    
+    .seeall{
+        padding: 10px 10px;
+        border-radius:4px;
+        position:absolute;
+        right:5%;
+    }
 }
 
 
@@ -1476,5 +1507,11 @@ audio {
 
     #bukowskiBody{
         min-width:60%;
+    }
+    .seeall{
+        padding: 10px 10px;
+        border-radius:4px;
+        position:absolute;
+        right:9%;
     }
 }
