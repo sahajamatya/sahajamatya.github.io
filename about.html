@@ -1,141 +1,139 @@
 <html>
 
 <head>
-    <title>Sahaj Amatya</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" class="style">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="viewMode.js"></script>
-  </head>
+  <title>Sahaj Amatya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" class="style">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="viewMode.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161396618-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-<script>
-    $(document).ready(function () {
-      $(".darkModeMsg").hide();
-      $(".slider").click(function () {
-        $(".darkModeMsg").show(500);
-        setTimeout(function () {
-          $(".darkModeMsg").hide(500);
-        }, 2000);
-      });
-    });
+    gtag('config', 'UA-161396618-1');
   </script>
+</head>
 
-<body class = "bodyAbout">
-    <header class="navbar">
-        <a href="index.html" title="sahajamatya.com" class="homeLink">@sahajamatya</a>
-        <div class="darkModeSec">
-            <img src="img/darkmode.png" height=16 style="padding-right:5px;" class="modeIcon"/>
-            <label class="switch">
-                <input type="checkbox" class="darkModeSelector">
-                <span class="slider round"></span>
-            </label>
-        </div>
-    </header>
-    <div class="aboutBody">
-        <div class="aboutMeContainer">
-            <div class="aboutMeLeft">
-                <p class="header">About me</p>
-                <p class="aboutTextNonMobile">I'm a university sophomore based in the DFW metroplex pursuing a degree in Computer
-                    Science. Deeply appreciate good design and so I built this website to try my hand at it. This
-                    website is a collection of my projects, blog posts, and my meditations.
-                </p>
-            </div>
-            <div class="filler">&nbsp;</div>
-            <div class="aboutMeRight">
-                <img class="headshot" src="img/headshot.jpg" />
-            </div>
-            <p class="aboutTextMobile">I'm a university sophomore based in the DFW metroplex pursuing a degree in Computer
-                Science. Deeply appreciate good design and so I built this website to try my hand at it. This website is
-                a collection of my projects, blog posts, and my meditations.
-            </p>
 
-            <p></p>
-        </div>
+<body class="bodyAbout">
+  <header class="navbar">
+    <a href="index.html" title="sahajamatya.com" class="homeLink">@sahajamatya</a>
+    <div class="darkModeSec">
+      <img src="img/darkmode.png" height=16 style="padding-right:5px;" class="modeIcon" />
+      <label class="switch">
+        <input type="checkbox" class="darkModeSelector">
+        <span class="slider round"></span>
+      </label>
     </div>
-    <div class="footerContainer" id="footer">
-        <div class="upperLip">&nbsp;</div>
-        <div class="footerContent">
-            <div class="firstFooterComp">
-                <p class="footerHeading">Navigation</p>
-                <p><a href="index.html">Home Page</a></p>
-                <p><a href="allPosts.html">All posts</a></p>
-                <p><a href="tiwltwa.html">Things I Would Like to Write About</a></p>
-                <p><a href="">About Me</a></p>
-                <p class="dropIdea">Drop an Idea &nbsp;<img src="img/box.svg"
-                        style="width:15px; margin-bottom:-1.5px" /></p>
-                        <div class="footerCopyright">
+  </header>
+  <div class="aboutBody">
+    <div class="aboutMeContainer">
+      <div class="aboutMeLeft">
+        <p class="header">About me</p>
+        <p class="aboutTextNonMobile">I'm a university sophomore based in the DFW metroplex pursuing a degree in
+          Computer
+          Science. Deeply appreciate good design and so I built this website to try my hand at it. This
+          website is a collection of my projects, blog posts, and my meditations.
+        </p>
+      </div>
+      <div class="filler">&nbsp;</div>
+      <div class="aboutMeRight">
+        <img class="headshot" src="img/headshot.jpg" />
+      </div>
+      <p class="aboutTextMobile">I'm a university sophomore based in the DFW metroplex pursuing a degree in Computer
+        Science. Deeply appreciate good design and so I built this website to try my hand at it. This website is
+        a collection of my projects, blog posts, and my meditations.
+      </p>
 
-                            <div id="simpleModal" class="modal">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <span class="closeBtn"><img src="img/close.png" width=20></span>
-                                  <h2>Drop an Idea</h2>
-                                </div>
-                                <div class="modal-body">
-                                  <form action="">
-                                    <label>Name/Alias:</label><br><br>
-                                    <input type="text" id="fname" name="fname" class="fullNameInput" placeholder="Optional" /><br><br>
-                                    <label>Idea:</label><br><br>
-                                    <textarea placeholder="" class="dropIdeaText"></textarea>
-                                  </form>
-                                </div>
-                                <div class="modal-footer">
-                                  <span class="dropIdeaSub">
-                                    Submit
-                                  </span>
-                                  <span class="dropIdeaCancel">
-                                    Cancel
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <script>
-                              var modal = document.getElementById('simpleModal');
-                              var modalBtn = document.getElementsByClassName('dropIdea')[0];
-                              var closeBtn = document.getElementsByClassName('closeBtn')[0];
-                              var cancelBtn = document.getElementsByClassName('dropIdeaCancel')[0];
-                  
-                              modalBtn.addEventListener('click', openModal);
-                              closeBtn.addEventListener('click', closeModal);
-                              window.addEventListener('click', clickOutside);
-                              cancelBtn.addEventListener('click', closeModal);
-                              function openModal() {
-                                modal.style.display = 'block';
-                              }
-                  
-                              function closeModal() {
-                                modal.style.display = 'none';
-                              }
-                  
-                              function clickOutside(e) {
-                                if (e.target == modal) {
-                                  modal.style.display = 'none';
-                                }
-                              }
-                            </script>
-                            &copy; 2020, Sahaj Amatya
-                          </div>
-            </div>
-            <div class="secondFooterComp">
-                <p class="footerHeading">Around the Web</p>
-                <p>
-                    <a href="https://twitter.com/sahaj_amatya" title="@sahaj_amatya" target="_blank"><img src="img/social/twitter.png"
-                            class="footerSocial"></a>
-                    <a href="https://instagram.com/sahajamatya" title="@sahajamatya" target="_blank"><img src="img/social/instagram.png"
-                            class="footerSocial"></a>
-                    <a href="img/social/snapcode.png" title="@sahajamatya" target="_blank"><img src="img/social/snapchat.png"
-                            class="footerSocial"></a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/sahajamatya" title="linkedin.com/in/sahajamatya" target="_blank"><img
-                            src="img/social/linkedin.png" class="footerSocial"></a>
-                    <a href="https://github.com/sahajamatya" title="github.com/sahajamatya" target="_blank"><img
-                            src="img/social/github.png" class="footerSocial"></a>
-                </p>
-            </div>
-        </div>
+      <p></p>
     </div>
+  </div>
+  <div class="footerContainer" id="footer">
+    <div class="upperLip">&nbsp;</div>
+    <div class="footerContent">
+      <div class="firstFooterComp">
+        <p class="footerHeading">Navigation</p>
+        <p><a href="index.html">Home Page</a></p>
+        <p><a href="allPosts.html">All posts</a></p>
+        <p><a href="tiwltwa.html">Things I Would Like to Write About</a></p>
+        <p><a href="">About Me</a></p>
+        <p class="dropIdea">Drop an Idea &nbsp;<img src="img/box.svg" style="width:15px; margin-bottom:-1.5px" /></p>
+        <div class="footerCopyright">
+
+          <div id="simpleModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="closeBtn"><img src="img/close.png" width=20></span>
+                <h2>Drop an Idea</h2>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <label>Name/Alias:</label><br><br>
+                  <input type="text" id="fname" name="fname" class="fullNameInput" placeholder="Optional" /><br><br>
+                  <label>Idea:</label><br><br>
+                  <textarea placeholder="" class="dropIdeaText"></textarea>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <span class="dropIdeaSub">
+                  Submit
+                </span>
+                <span class="dropIdeaCancel">
+                  Cancel
+                </span>
+              </div>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById('simpleModal');
+            var modalBtn = document.getElementsByClassName('dropIdea')[0];
+            var closeBtn = document.getElementsByClassName('closeBtn')[0];
+            var cancelBtn = document.getElementsByClassName('dropIdeaCancel')[0];
+
+            modalBtn.addEventListener('click', openModal);
+            closeBtn.addEventListener('click', closeModal);
+            window.addEventListener('click', clickOutside);
+            cancelBtn.addEventListener('click', closeModal);
+            function openModal() {
+              modal.style.display = 'block';
+            }
+
+            function closeModal() {
+              modal.style.display = 'none';
+            }
+
+            function clickOutside(e) {
+              if (e.target == modal) {
+                modal.style.display = 'none';
+              }
+            }
+          </script>
+          &copy; 2020, Sahaj Amatya
+        </div>
+      </div>
+      <div class="secondFooterComp">
+        <p class="footerHeading">Around the Web</p>
+        <p>
+          <a href="https://twitter.com/sahaj_amatya" title="@sahaj_amatya" target="_blank"><img
+              src="img/social/twitter.png" class="footerSocial"></a>
+          <a href="https://instagram.com/sahajamatya" title="@sahajamatya" target="_blank"><img
+              src="img/social/instagram.png" class="footerSocial"></a>
+          <a href="img/social/snapcode.png" title="@sahajamatya" target="_blank"><img src="img/social/snapchat.png"
+              class="footerSocial"></a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/sahajamatya" title="linkedin.com/in/sahajamatya" target="_blank"><img
+              src="img/social/linkedin.png" class="footerSocial"></a>
+          <a href="https://github.com/sahajamatya" title="github.com/sahajamatya" target="_blank"><img
+              src="img/social/github.png" class="footerSocial"></a>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

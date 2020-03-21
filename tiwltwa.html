@@ -7,13 +7,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="viewMode.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161396618-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-161396618-1');
+    </script>
 </head>
 
 <body class="bodyClass">
     <header class="navbar">
         <a href="index.html" title="sahajamatya.com" class="homeLink">@sahajamatya</a>
         <div class="darkModeSec">
-            <img src="img/darkmode.png" height=16 style="padding-right:5px;"  class="modeIcon"/>
+            <img src="img/darkmode.png" height=16 style="padding-right:5px;" class="modeIcon" />
             <label class="switch">
                 <input type="checkbox" class="darkModeSelector">
                 <span class="slider round" id="darkMode"></span>
