@@ -9,12 +9,14 @@ $(document).ready(function () {
         $(".style").attr("href", "darkMode.css");
         $(".modeIcon").attr("src", "img/darkmodedark.png");
         $(".scrollup").attr("src", "img/scrollupdark.png");
+        $(".sortImg").attr("src", "img/sortdark.png");
     }
     function lightMode() {
         $(".darkModeSelector").prop("checked", false);
         $(".style").attr("href", "style.css");
         $(".modeIcon").attr("src", "img/darkmode.png");
         $(".scrollup").attr("src", "img/scrollup.png");
+        $(".sortImg").attr("src", "img/sort.png");
     }
     if (mode=='d') {
         darkMode();

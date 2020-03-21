@@ -945,7 +945,7 @@ audio {
     border: 1px solid white;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
-    background-color: #000000;
+    background-color: #111111;
     font-family: Avenir;
     width: 100%;
     border-radius: 4px;
