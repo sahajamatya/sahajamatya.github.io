@@ -9,6 +9,8 @@ ______________________________
 TO DO:
 - fix bukowski sticky on safari
 - set categories for all posts
+- web-kit for all box shadows
+- text ellipsis for firefox
 ______________________________
 
 
