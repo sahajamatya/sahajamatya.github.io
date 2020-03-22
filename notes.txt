@@ -6,5 +6,18 @@ Sorts:
 - Give me a random blog
 
 ______________________________
-
+TO DO:
 - fix bukowski sticky on safari
+
+______________________________
+
+
+Social Media Preview <meta> tags:
+
+<meta property="og:site_name" content="Sahaj Amatya" />
+  <meta property="og:title" content="Sahaj Amatya" />
+  <meta property="og:description"
+    content="_________" />
+  <meta property="og:image" content="https://sahajamatya.com/img/_________">
+  <meta property="og:url" content="https://sahajamatya.com/_________">
+  <meta property="og:type" content="blog" />
