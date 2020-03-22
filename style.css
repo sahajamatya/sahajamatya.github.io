@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: HelveticaNeue;
-    src: url('Fonts/Helvetica/HelveticaNeue.ttc');
+    src: url('Fonts/Helvetica/HelveticaNeue.otf');
 }
 
 @font-face {
@@ -647,7 +647,6 @@ header {
     background-color: white;
     margin: 20% auto;
     width: 90%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(0, 0, 0, 0.3);
     animation-name: modalopen;
     animation-duration: 1s;
     color: black;
@@ -665,18 +664,19 @@ header {
 }
 
 .modal-header {
+    
     padding: 15px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     font-size: 1.2em;
-    background-color: #E0E5EC;
-    box-shadow: 0 1px 10px 0 #A3B1C6;
+    background-color: white;
 }
 
 .modal-body {
     padding: 20px 20px;
     font-size: 1.1em;
-    background-color: #E0E5EC;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
 .modal-footer {
@@ -686,7 +686,8 @@ header {
     display: flex;
     justify-content: flex-end;
     font-family: HelveticaNeue;
-    background-color: #E0E5EC;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
 .modal-header h2 {
@@ -695,9 +696,6 @@ header {
 
 .closeBtn {
     float: right;
-    box-shadow:
-        6px 6px 16px #A3B1C6,
-        -6px -6px 16px #FFFFFF;
     border-radius: 50%;
 }
 
@@ -710,45 +708,41 @@ header {
     border-radius: 5px;
     padding: 7px 10px;
     margin-right: 10px;
-    box-shadow:
-        6px 6px 16px #A3B1C6,
-        -6px -6px 16px #FFFFFF;
-    background-color: #E0E5EC;
+    border:1px solid #ccc;
+    background-color: white;
 }
 
 .dropIdeaCancel {
     border-radius: 5px;
     padding: 7px 10px;
     margin-right: 5px;
-    box-shadow:
-        6px 6px 16px #A3B1C6,
-        -6px -6px 16px #FFFFFF;
-    background-color: #E0E5EC;
+    background-color: white;
+    border:1px solid #ccc;
 }
 
 .dropIdeaSub:hover {
     cursor: pointer;
     transition: 0.5s;
+    background-color: #ccc;
 }
 
 .dropIdeaCancel:hover {
     cursor: pointer;
     transition: 0.5s;
+    background-color: #ccc;
 }
 
 .fullNameInput {
     -webkit-appearance: none;
-    border: 1px solid #E0E5EC;
-    -webkit-box-shadow:
-        6px 6px 16px #A3B1C6,
-        -6px -6px 16px #FFFFFF;
-    background-color: #E0E5EC;
+    border: 1px solid #ddd;
+    background-color: white;
     font-family: HelveticaNeue;
     width: 100%;
     border-radius: 4px;
     font-size: 1.1em;
     padding: 7px;
     color: rgb(93, 93, 93);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
 .fullNameInput:focus,
@@ -759,14 +753,8 @@ header {
 .dropIdeaText {
     -webkit-appearance: none;
     width: 100%;
-    border: 1px solid #E0E5EC;
-    -webkit-box-shadow:
-        6px 6px 16px #A3B1C6,
-        -6px -6px 16px #FFFFFF;
-    box-shadow:
-        6px 6px 16px #A3B1C6,
-        -6px -6px 16px #FFFFFF;
-    background-color: #E0E5EC;
+    border: 1px solid #ddd;
+    background-color: white;
     font-family: HelveticaNeue;
     width: 100%;
     border-radius: 4px;
@@ -775,6 +763,7 @@ header {
     height: 200px;
     resize: none;
     color: rgb(93, 93, 93);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
 .darkModeMsg {
@@ -803,8 +792,8 @@ header {
 }
 
 .notice {
-    font-size: 0.7em;
     font-family: HelveticaNeue;
+    font-size: 0.7em;
 }
 
 .bodyText a {
@@ -1005,15 +994,16 @@ audio {
 
 .seeall{
     padding: 10px 10px;
-    border-radius:4px;
+    border-radius:7px;
     position:absolute;
     right:4%;
-    color: black
+    color: black;
+    background-color: rgb(238, 238, 238);
 }
 
 .seeall:hover{
-    background-color: rgb(219, 219, 219);
-    transition:1.5s ease;
+    background-color: rgb(210, 210, 210);
+    transition:1s ease;
     cursor:pointer;
 }
 
@@ -1195,9 +1185,6 @@ audio {
         border-radius: 4px;
     }
 
-    .tiwltwaBody {
-        width: 80%;
-    }
     .bukowskiBox{
         width:66%;
         margin:0 auto;
@@ -1207,6 +1194,12 @@ audio {
         border-radius:4px;
         position:absolute;
         right:6%;
+    }
+    .tiwltwaBody {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 5px;
+        font-family: HelveticaNeue;
     }
 }
 
@@ -1304,6 +1297,12 @@ audio {
         border-radius:4px;
         position:absolute;
         right:5%;
+    }
+    .tiwltwaBody {
+        width: 56%;
+        margin: 0 auto;
+        padding-top: 5px;
+        font-family: HelveticaNeue;
     }
 }
 
@@ -1513,5 +1512,11 @@ audio {
         border-radius:4px;
         position:absolute;
         right:9%;
+    }
+    .tiwltwaBody {
+        width: 34%;
+        margin: 0 auto;
+        padding-top: 5px;
+        font-family: HelveticaNeue;
     }
 }

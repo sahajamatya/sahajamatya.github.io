@@ -11,6 +11,7 @@ $(document).ready(function () {
         $(".scrollup").attr("src", "img/scrollupdark.png");
         $(".sortImg").attr("src", "img/sortdark.png");
         $(".seeAllImg").attr("src", "img/seealldark.png");
+        $(".crossImg").attr("src", "img/closedark.png");
     }
     function lightMode() {
         $(".darkModeSelector").prop("checked", false);
@@ -19,6 +20,7 @@ $(document).ready(function () {
         $(".scrollup").attr("src", "img/scrollup.png");
         $(".sortImg").attr("src", "img/sort.png");
         $(".seeAllImg").attr("src", "img/seeall.png");
+        $(".crossImg").attr("src", "img/close.png");
     }
     if (mode=='d') {
         darkMode();

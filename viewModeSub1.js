@@ -10,6 +10,7 @@ $(document).ready(function () {
         $(".modeIcon").attr("src", "../img/darkmodedark.png");
         $(".scrollup").attr("src", "../img/scrollupdark.png");
         $(".sortImg").attr("src", "../img/sortdark.png");
+        $(".crossImg").attr("src", "../img/closedark.png");
     }
     function lightMode(){
         $(".darkModeSelector").prop("checked", false);
@@ -17,6 +18,7 @@ $(document).ready(function () {
         $(".modeIcon").attr("src", "../img/darkmode.png");
         $(".scrollup").attr("src", "../img/scrollup.png");
         $(".sortImg").attr("src", "../img/sort.png");
+        $(".crossImg").attr("src", "../img/close.png");
     }
     if (mode == 'd') {
         darkMode();

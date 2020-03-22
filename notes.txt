@@ -8,7 +8,7 @@ Sorts:
 ______________________________
 TO DO:
 - fix bukowski sticky on safari
-
+- set categories for all posts
 ______________________________
 
 
