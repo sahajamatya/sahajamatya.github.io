@@ -440,6 +440,7 @@ span i {
     margin-left: -35px;
     margin-top: 10px;
     transition: 1s ease-in-out;
+    background-color: white;
 }
 
 .footerContainer {
