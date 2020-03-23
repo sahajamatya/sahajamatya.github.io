@@ -595,7 +595,7 @@ header {
     display: inline-block;
     font-family: HelveticaNeue;
     font-family: 1.1em;
-    width: 80px;
+    width: 210px;/*80*/
 }
 
 .dropdown-content {

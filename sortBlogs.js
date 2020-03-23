@@ -16,9 +16,10 @@ $(document).ready(function () {
     listOfTitles.splice(-1, 1);
     if (sortType === "oldSort") {
       listOfTitles.sort();
-
+      $(".currentOrder").html(": Oldest to Newest");
     } else {
       listOfTitles.sort().reverse();
+      $(".currentOrder").html(": Newest to Oldest");
     }
     var i = 0;
     var sortedContent = "";
