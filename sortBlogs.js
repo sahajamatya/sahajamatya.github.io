@@ -1,5 +1,12 @@
-
 $(document).ready(function () {
+  $(".dropdown").hover(function () {
+    $(".dropdown-content").show();
+    $(".dropdown-content a").click(function () {
+      $(".dropdown-content").hide();
+    });
+  }, function () {
+    $(".dropdown-content").hide();
+  });
   function sortBlogs(sortType) {
     var listOfTitles = "";
     $(".innerContainer").each(function () {

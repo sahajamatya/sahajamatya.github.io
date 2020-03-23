@@ -622,8 +622,8 @@ header {
     background-color: #eee;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown-opt:active .dropdown-content{
+    display:none;
 }
 
 .homeLink {
