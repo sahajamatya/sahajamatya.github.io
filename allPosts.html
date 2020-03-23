@@ -15,6 +15,7 @@
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="viewMode.js"></script>
+    <script src="sortBlogs.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161396618-1"></script>
     <script>
@@ -44,15 +45,15 @@
             <div class="dropdown">
                 <span class="dropbtn"><img src="img/sort.png" height=12 class="sortImg" /> Sort by</span>
                 <div class="dropdown-content">
-                    <a href="#">Most Popular</a>
-                    <a href="#">Date Added (oldest)</a>
-                    <a href="#">Date Added (newest)</a>
+                    <a href="#" class="popSort">Most Popular</a>
+                    <a href="#" class="oldSort">Date Added (oldest)</a>
+                    <a href="#" class="newSort">Date Added (newest)</a>
                 </div>
             </div>
         </div>
 
         <div class="upcomingPosts" style="width: 100%;">
-            <div class="innerContainer">
+            <div class="innerContainer container1" id="20200103picasso">
                 <a href="posts/20200103picasso.html" class="linkHead">
                     <div class="postHeader">Project Picasso</div>
                     <div class="description">
@@ -70,7 +71,7 @@
                     </div>
                 </a>
             </div>
-            <div class="innerContainer">
+            <div class="innerContainer container2" id="20190729pablo">
                 <a href="posts/20190729pablo.html" class="linkHead">
                     <div class="postHeader">Dissecting the Life of Pablo</div>
                     <div class="description">
@@ -86,7 +87,7 @@
                     </div>
                 </a>
             </div>
-            <div class="innerContainer">
+            <div class="innerContainer container3" id="20180523fdr">
                 <a href="posts/20180523fdr.html" class="linkHead">
                     <div class="postHeader">On Science - The Endless Frontier | Part 1</div>
                     <div class="description">
@@ -103,7 +104,7 @@
                     </div>
                 </a>
             </div>
-            <div class="innerContainer">
+            <div class="innerContainer container4" id="20180608suicide">
                 <a href="posts/20180608suicide.html" class="linkHead">
                     <div class="postHeader">Alternatives to Suicide</div>
                     <div class="description">
@@ -119,7 +120,7 @@
                     </div>
                 </a>
             </div>
-            <div class="innerContainer">
+            <div class="innerContainer container5" id="20200206bukowski">
                 <a href="posts/02062020bukowski.html" class="linkHead">
                     <div class="postHeader">roll the dice - Charles Bukowski</div>
                     <div class="description">
@@ -135,7 +136,7 @@
                     </div>
                 </a>
             </div>
-            <div class="innerContainer">
+            <div class="innerContainer container6" id="20180114sapir">
                 <a href="posts/20180114sapir.html" class="linkHead">
                     <div class="postHeader">Dimensional Implications of the Sapir-Whorf Hypothesis</div>
                     <div class="description">
@@ -155,7 +156,6 @@
             </div>
         </div>
     </div>
-
 
     <a href="#allPosts"><img src="img/scrollup.png" class="scrollup" title="Scroll to Top" /></a>
 
