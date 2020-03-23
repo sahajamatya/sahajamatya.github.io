@@ -2,8 +2,8 @@ $(document).ready(function () {
     //var view = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({ accumulator, [key.trim()]: decodeURIComponent(value) }), {});
     var cookie = document.cookie;
     var i = cookie.indexOf("mode=");
-    var mode = cookie.charAt(i+5);
-    
+    var mode = cookie.charAt(i + 5);
+
     function darkMode() {
         $(".darkModeSelector").prop("checked", true);
         $(".style").attr("href", "darkMode.css");
@@ -21,8 +21,9 @@ $(document).ready(function () {
         $(".sortImg").attr("src", "img/sort.png");
         $(".seeAllImg").attr("src", "img/seeall.png");
         $(".crossImg").attr("src", "img/close.png");
+        $(".pubPosts .upPosts").css("color", "black");
     }
-    if (mode=='d') {
+    if (mode == 'd') {
         darkMode();
     } else {
         lightMode();
