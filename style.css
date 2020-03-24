@@ -1019,6 +1019,87 @@ audio {
     cursor:pointer;
 }
 
+.picassoCarousel {
+    position:relative;
+    height:600px;
+    width:90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.carouselSlide{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    width:100%;
+}
+
+.carouselImage{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.carouselTrack-container{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carouselTrack{
+    padding: 0;
+    margin:0;
+    list-style:none;
+    position: relative;
+    height: 100%;
+    transition: transform 500ms ease-in;
+}
+
+
+.carouselButton{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border:0;
+    cursor:pointer;
+    
+}
+
+.carouselButton img{
+    width: 25px;
+}
+
+.carouselButton:focus {
+    outline: none;
+}
+
+
+.carouselButton--left{
+    left: -40px;
+}
+
+.carouselButton--right{
+    right: -40px;
+}
+
+.carouselNav{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.carouselIndicator{
+    border: 0;
+    border-radius:50%;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+}
+
+.carouselIndicator .currentSlide {
+    background-color: rgba(0, 0, 0, 0.75);
+}
 
 
 /*iPad*/
