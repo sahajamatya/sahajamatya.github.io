@@ -1030,6 +1030,90 @@ audio {
     cursor:pointer;
 }
 
+.picassoCarousel {
+    position:relative;
+    height:500px;
+    width:90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.carouselSlide{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    width:100%;
+}
+
+.carouselImage{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.carouselTrack-container{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carouselTrack{
+    padding: 0;
+    margin:0;
+    list-style:none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+
+.carouselButton{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border:0;
+    cursor:pointer;
+    
+}
+
+.carouselButton img{
+    width: 25px;
+}
+
+.carouselButton:focus {
+    outline: none;
+}
+
+.carouselButton--left{
+    left: -40px;
+}
+
+.carouselButton--right{
+    right: -40px;
+}
+
+.carouselNav{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.carouselIndicator{
+    border: 0;
+    height: 5px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 10px;
+    cursor:pointer;
+}
+
+.carouselIndicator.currentSlide {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.is-hidden{display:none;}
+
 /*iPad*/
 
 @media only screen and (min-width: 768px) {
