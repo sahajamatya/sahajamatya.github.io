@@ -1078,7 +1078,7 @@ audio {
 }
 
 .carouselButton--right{
-    right: -35px;
+    right: -px;
 }
 
 .carouselNav{
@@ -1103,6 +1103,33 @@ audio {
 
 .is-hidden{display:none;}
 
+.displayImg{
+    width:100%;
+    margin: 0 auto;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.addressBookImg {
+    width:100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.logImages{
+    width:100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.034), 0 1px 5px rgba(0, 0, 0, 0.048), 0 1px 5px rgba(0, 0, 0, 0.06), 0 1px 5px rgba(0, 0, 0, 0.072), 0 1px 5px rgba(0, 0, 0, 0.086), 0 1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.neumorphicPics {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    margin:0 auto;
+}
 
 /*iPad*/
 
