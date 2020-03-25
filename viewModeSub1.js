@@ -12,6 +12,7 @@ $(document).ready(function () {
         $(".sortImg").attr("src", "../img/sortdark.png");
         $(".crossImg").attr("src", "../img/closedark.png");
         $(".displayImg").attr("src", "../img/20200325log/displayDark.png");
+        $(".scrollDemo").attr("src", "../img/20200325log/scrollDark.gif");
     }
     function lightMode(){
         $(".darkModeSelector").prop("checked", false);
@@ -21,6 +22,7 @@ $(document).ready(function () {
         $(".sortImg").attr("src", "../img/sort.png");
         $(".crossImg").attr("src", "../img/close.png");
         $(".displayImg").attr("src", "../img/20200325log/displayLight.png");
+        $(".scrollDemo").attr("src", "../img/20200325log/scrollLight.gif");
     }
     if (mode == 'd') {
         darkMode();

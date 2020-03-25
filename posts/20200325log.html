@@ -92,7 +92,7 @@
                 A design choice I had to debate over was what image I would be adding as the background
                 to my footer.
             </p>
-            <img src="../img/20200325log/scrollFooter.gif" class="logImages">
+            <img src="../img/20200325log/scrollLight.gif" class="logImages scrollDemo">
             <p>
                 My first choice was to add a textured leather background where the text could be embossed
                 on. However, I chose to stick to the fundamental principle of design for this project and
@@ -114,13 +114,33 @@
             <p>
                 Half way through development, I was unsure if I should remodel this website with Neumorphism
                 instead of Mareial Design. I ended scraping this idea as I faced difficulties in making image
-                elements adapt to this design pallete.
-                <!-- Make a carousel for these 
-                    
-                    <div class="neumorphicPics">
-                    <div class="containerNeu"><img src = "../img/20200325log/neumorphism.jpg" class="logImages" style="width:70%;height:auto"></div>
-                    <div class="dropIdeaNeu"><img src = "../img/20200325log/dropImgNeu.PNG" class="logImages" style="height:100%;width:auto"></div>
-                </div> -->
+                elements adapt to this design pallete. Here are some of the iterations of my design through the 
+                neumorphic approach: 
+                <div class="picassoCarousel">
+                    <button class="carouselButton carouselButton--left is-hidden">
+                        <img src="../img/leftArrow.png" alt="" title="Previous Picture" />
+                    </button>
+                    <div class="carouselTrack-container">
+                        <ul class="carouselTrack">
+                            <li class="carouselSlide currentSlide">
+                                <img class="carouselImage" src="../img/20200325log/neumorphism.jpg" alt="">
+                            </li>
+                            <li class="carouselSlide">
+                                <img class="carouselImage" src="../img/20200325log/dropImgNeu.PNG" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carouselButton carouselButton--right">
+                        <img src="../img/rightArrow.png" alt="" title="Next Picture" />
+                    </button>
+                    <div class="carouselNav">
+                        <button class="carouselIndicator currentSlide"></button>
+                        <button class="carouselIndicator"></button>
+                    </div>
+                </div>
+            </p>
+            <p>
+
             </p>
         </div>
     </div>
@@ -211,6 +231,7 @@
         </div>
     </div>
     </div>
+    <script src="../carousel.js"></script>
 </body>
 
 </html>
