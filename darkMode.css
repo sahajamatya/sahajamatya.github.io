@@ -1086,11 +1086,11 @@ audio {
 }
 
 .carouselButton--left {
-    left: -40px;
+    left: -30px;
 }
 
 .carouselButton--right {
-    right: -40px;
+    right: -30px;
 }
 
 .carouselNav {
