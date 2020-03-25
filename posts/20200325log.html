@@ -11,6 +11,7 @@
     <meta property="og:url" content="https://sahajamatya.com/posts/20200325log.html">
     <meta property="og:type" content="blog" />
     <link rel="stylesheet" href="../style.css" class="style">
+    <link rel="shortcut icon" href="/img/siteLogo.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../viewModeSub1.js"></script>
@@ -42,7 +43,7 @@
     <br>
     <div class="bodyElement" id="logBody">
         <span class="header">Design Log: sahajamatya.com</span><br>
-        <span class="underline">Published on March 25, 2020 by <a href="../about.html">Sahaj Amatya</a></span><br>
+        <span class="underline">First published on March 25, 2020 by <a href="../about.html">Sahaj Amatya</a></span><br>
         <table>
             <tr valign="center">
                 <td>
@@ -62,6 +63,7 @@
             </tr>
         </table>
         <div class="bodyText">
+            <p class="notice">Last updated: March 25, 2020, v1</p>
             <p>
                 The most fundamental principle of design I laid down for my website was to have every element
                 sustain a quality of being intangible unless explicitly required. I wanted to introduce elements
@@ -74,12 +76,13 @@
             <p>
                 As the user scrolls down, they are met with an interface displaying my posts:
             </p>
-            <img src="../img/20200325log/displayLight.png" class="displayImg" />
+            <img src="../img/20200325log/displayLight.gif" class="displayImg" />
             <p>
                 You may notice that the tabs on the top try to mimic tabs from an address book.
                 Although the design might seem simple at first, it took me about 7-8 hrs
                 to give life to this design since such shapes are not standard with CSS. The
-                fact that I am a CSS novice did not help either. The approach I chose at the
+                fact that I am a CSS novice did not help either.
+                The approach I chose at the
                 end was to surround the text within those tabs with skewed rectangles to create
                 the illusion of a sloped line.
             </p>
@@ -112,10 +115,12 @@
                 on non-mobile devices as mobile devices are incapable of running the JavaScript for this.
             </p>
             <p>
-                Half way through development, I was unsure if I should remodel this website with Neumorphism
-                instead of Mareial Design. I ended scraping this idea as I faced difficulties in making image
-                elements adapt to this design pallete. Here are some of the iterations of my design through the 
-                neumorphic approach: 
+                Half way through development, I was unsure if I should remodel this website with <a
+                    href="https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6"
+                    target="_blank">Neumorphism</a>
+                instead of Material Design. I ended scraping this idea as I faced difficulties in making image
+                elements adapt to this design pallete. Here are some iterations of my design through the
+                neumorphic approach:
                 <div class="picassoCarousel">
                     <button class="carouselButton carouselButton--left is-hidden">
                         <img src="../img/leftArrow.png" alt="" title="Previous Picture" />
@@ -140,8 +145,39 @@
                 </div>
             </p>
             <p>
-
+                <p class="subHeadings">Building a Mechanism for Dark Mode</p>
+                Adding the dark mode feature to this website was both the most challenging and the most exciting part of
+                development for me. All resources online for implementing dark mode, although helpful, worked only for
+                the single webpage the code was written for. This would reset the view mode after every other webpage
+                the user would visit on my website. I wanted my dark mode to be consistent along all webpages
+                so that the user did not have to keep toggling the view mode back to their desired option after every
+                other webpage.
             </p>
+            <img src="../img/20200325log/darkModeDemo.gif" class="logImages">
+            <p>
+                I achieved this by learning to create and manipulate <a href="https://en.wikipedia.org/wiki/HTTP_cookie"
+                    target="_blank">HTTP cookies</a>. Once I had the mechanism for dark mode built, I had to study the
+                shades of black to come up with a color scheme that had the best aesthetic. I couldn't make the
+                background completely black as it would render the shadow effect ineffective. I realized that the closer
+                an element was to the user, i.e., the higher an element was elevated from the base, the lighter it would
+                appear. Also, as obvious as it may be, I learned a key difference between giving a black element an
+                opacity of 0.5 versus the color of grey. In contrast to a white background, both elements would appear
+                to be grey, but when put in contrast to a darker background, the element with an altered opacity tends
+                to become invisible.
+            </p>
+        </div>
+        <div class="commentBox">
+            <form action="">
+                <textarea class="commentTextArea" placeholder="Feature to add comment coming soon."></textarea>
+                <div class="commentButtons">
+                    <span class="commentSub">
+                        Submit
+                    </span>
+                    <span class="commentCancel">
+                        Cancel
+                    </span>
+                </div>
+            </form>
         </div>
     </div>
     <a href="#logBody"><img src="../img/scrollup.png" class="scrollup" title="Scroll to Top" /></a>

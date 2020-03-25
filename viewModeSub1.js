@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(".scrollup").attr("src", "../img/scrollupdark.png");
         $(".sortImg").attr("src", "../img/sortdark.png");
         $(".crossImg").attr("src", "../img/closedark.png");
-        $(".displayImg").attr("src", "../img/20200325log/displayDark.png");
+        $(".displayImg").attr("src", "../img/20200325log/displayDark.gif");
         $(".scrollDemo").attr("src", "../img/20200325log/scrollDark.gif");
     }
     function lightMode(){
@@ -21,7 +21,7 @@ $(document).ready(function () {
         $(".scrollup").attr("src", "../img/scrollup.png");
         $(".sortImg").attr("src", "../img/sort.png");
         $(".crossImg").attr("src", "../img/close.png");
-        $(".displayImg").attr("src", "../img/20200325log/displayLight.png");
+        $(".displayImg").attr("src", "../img/20200325log/displayLight.gif");
         $(".scrollDemo").attr("src", "../img/20200325log/scrollLight.gif");
     }
     if (mode == 'd') {
