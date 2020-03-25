@@ -1074,11 +1074,11 @@ audio {
 }
 
 .carouselButton--left{
-    left: -40px;
+    left: -35px;
 }
 
 .carouselButton--right{
-    right: -40px;
+    right: -35px;
 }
 
 .carouselNav{
@@ -1092,7 +1092,8 @@ audio {
     height: 5px;
     width: 5px;
     background-color: rgba(0, 0, 0, 0.3);
-    margin: 0 10px;
+    margin: 0 5px;
+    border-radius:4px;
     cursor:pointer;
 }
 
