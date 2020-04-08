@@ -1,3 +1,5 @@
-This website will serve as a location where I organize my meditations. Launching March 2020.
+This website is a collection of my projects and meditations.
 
+https://sahajamatya.com
+or
 https://sahajamatya.github.io
