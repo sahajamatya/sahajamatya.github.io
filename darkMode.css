@@ -1142,6 +1142,11 @@ audio {
     font-style: italic;
 }
 
+.hangingIndent{
+    padding-left: 35px;
+    text-indent: -35px;
+}
+
 /*iPad*/
 
 @media only screen and (min-width: 768px) {
