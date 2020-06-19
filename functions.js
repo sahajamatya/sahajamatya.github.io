@@ -1,4 +1,10 @@
 $(function () {
+  $(".dropIdeaSub").click(function(){
+    alert("Backend will be ported for this feature August 2020.");
+  });
+  $(".commentSub").click(function(){
+    alert("Backend will be ported for this feature August 2020.");
+  });
   $(".upcomingPosts").hide();
   $(".pubPosts").click(function () {
     $(".upPosts").css("opacity", "0.4");
